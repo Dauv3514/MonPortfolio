@@ -1,0 +1,80 @@
+/* .nav {
+    padding-right: 6rem;
+    text-align: right;
+    &__link {
+        display: inline;
+        font-size: 3rem;
+        padding-left: 1.5rem;
+        &--active {
+            color: #001534;
+        }
+    }      
+    &__link a {
+        text-decoration: none;
+        color: #D6FFF5;
+            &:hover {
+                color: #fff;
+        }
+    } 
+} */
+
+/* .nav {
+    display: flex;
+    justify-content: space-around;
+
+    &__rondCv {
+        height: 36px;
+        width: 36px;
+        border: 2px solid var(--color-vert);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color-vert);
+    }
+    
+    &__rondCv p {
+        font-size: 18px;
+    }
+
+} */
+
+header > nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 8rem;
+
+    & .cv {
+
+        font-size: var(--font-size-moyen);
+        border: 0.2rem solid var(--color-vert);
+        color: var(--color-vert);
+        height: 4.8rem;
+        width: 4.8rem;
+        display: flex;    
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+
+    }
+
+    & .liens a {
+
+        font-size: var(--font-size-petit);
+        font-family: var(--font-family-roboto-mono);
+
+        &:nth-child(n+2) {
+            margin-left: 4.3rem;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

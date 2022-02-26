@@ -1,0 +1,60 @@
+footer {
+
+    padding : var(--padding-sections);
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer {
+
+    &__ligne {
+
+        width: 100rem;
+        height: 0.2rem;
+        background-color: white;
+
+    }
+
+    &__liens {
+
+        display: flex;
+        justify-content: center;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+
+        & > a {
+
+            height: 8rem;
+            width: 8rem;
+            border: 0.2rem solid white;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:nth-child(n + 2) {
+
+                margin-left: 8rem;
+
+            }
+
+        }
+
+    }
+
+    &__linkedin {
+
+        height: 3.6rem;
+        width: 3.6rem;
+
+    }
+
+    &__copyright {
+
+        text-align: center;
+        padding-bottom: 8rem;
+
+    }
+
+}

@@ -1,0 +1,49 @@
+.contact {
+
+    padding : var(--padding-sections);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    p {
+        padding-top: var(--padding-apres-titre);
+        font-size: var(--font-size-grand);
+        color: var(--color-vert);
+    }
+
+    &__animation {
+
+        display: flex;
+        /* justify-content: center;
+        align-items: center; */
+        position: relative;
+
+    }
+
+    &__rond {
+
+        height: 35rem;
+        width: 35rem;
+        border: 0.2rem solid var(--color-vert);
+        border-radius: 100%;
+        margin-top: 16rem;
+
+    }
+
+    &__eclatgauche {
+
+        position: absolute;
+        left: 15rem;
+        top: -10rem;
+
+    }
+
+    &__eclatdroite {
+
+        position: absolute;
+        right: 15rem;
+        top: -10rem;
+
+    }
+
+}

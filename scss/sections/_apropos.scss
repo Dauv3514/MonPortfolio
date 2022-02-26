@@ -1,0 +1,107 @@
+.apropos {
+
+    padding : var(--padding-sections);
+
+    &__titre { 
+    
+        padding-bottom: 3rem;
+        border-bottom: 0.4rem solid var(--color-vert);
+        position: absolute; // a revoir
+        right: 22rem;        
+    
+    }
+
+    &__bloc {
+
+        margin: 20rem 0rem 0 22.5rem; //a revoir
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-gris-fonce);
+        border: 0.6rem double var(--color-gris-clair);
+        width: 102rem;
+        border-radius: 2rem;
+
+        p {
+            font-size: var(--font-size-grand);
+            padding-left: 5rem;
+        }
+
+    }
+
+    &__gris {
+
+        color: var(--color-gris-clair);
+
+    }
+
+    &__violet {
+
+        color: var(--color-violet);
+
+    }
+
+    &__bleu {
+
+        color: var(--color-bleu);
+
+    }
+
+    &__vert {
+
+        color: var(--color-vert);
+
+    }
+
+    &__rouge {
+
+        color: var(--color-rouge);
+
+    }
+
+    &__engloberond {
+
+        display: flex;
+        padding-top: 4rem;
+        padding-bottom: 9.4rem;
+        padding-left: 5rem;
+
+
+    }
+
+    &__rond {
+
+        height: 3.2rem;
+        width: 3.2rem;
+        background-color: var(--color-gris-clair);
+        border-radius: 100%;
+        display: inline;
+
+        &:nth-child(n + 2) {
+
+            margin-left: 3rem;
+
+        }
+
+    }
+
+    &__experiences {
+
+        display: flex;
+        align-items: center;
+        padding-top: 3rem;
+        padding-bottom: 10rem;
+
+        p {
+            padding-left: 3rem;
+        }
+
+        a {
+            border: 3rem double var(--color-gris-vert);
+            display: flex;
+            align-items: center;
+            padding-left: 6rem;
+        }
+
+    }
+
+}

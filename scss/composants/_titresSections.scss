@@ -1,0 +1,28 @@
+.titre-section {
+
+    display: flex;
+    align-items: center;
+
+    &::before, &::after {
+
+        content:'';
+        background-color: var(--color-vert);
+        height: 0.4rem;
+        width: 30rem;
+        display: block;
+
+    }
+
+    &::before {
+
+        margin-right: 10rem;
+
+    }
+
+    &::after {
+
+        margin-left: 10rem;
+        
+    }
+
+}

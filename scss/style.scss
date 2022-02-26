@@ -1,0 +1,17 @@
+@import "./configs/variables";
+@import "./configs/reset";
+@import "./configs/base";
+
+@import "./sections/nav";
+@import "./sections/accueil";
+@import "./sections/aPropos";
+@import "./sections/competences";
+@import "./sections/contact";
+@import "./sections/projets";
+@import "./sections/footer";
+
+@import "./composants/blocsCompetences";
+@import "./composants/cartesProjets";
+@import "./composants/titresSections"
+
+

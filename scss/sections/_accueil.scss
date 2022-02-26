@@ -1,0 +1,124 @@
+.accueil {
+    
+    padding-top: 6rem;
+    padding-left: 28rem;
+    display: flex;
+    padding-right: 28rem;
+    height: calc(100vh - 107px);
+
+    .presentation, .animation {
+
+        width: 50%;
+
+    }
+
+    .presentation {
+
+        &__nom {
+
+            padding-bottom: 5rem;
+            border-bottom: 0.4rem solid var(--color-vert);
+            width: 80%;
+
+        }
+
+        &__metier {
+
+            padding-top: 7rem;
+
+        }
+
+        &__specialite {
+
+            padding-top: 1rem;
+            padding-bottom: 6rem;
+
+            & span {
+                color: var(--color-vert);
+            }
+
+            & .point {
+                font-size: 6rem;
+            }
+
+        }
+
+        &__description {
+            margin-bottom: 8rem;
+            line-height: 3.1rem;
+        }
+
+        &__contact {
+            padding : 3rem 5rem ;
+            border: 0.1rem solid var(--color-vert);
+            color: var(--color-vert);
+            font-size: var(--font-size-grand);
+            border-radius: 10rem;   
+            font-family: var(--font-family-dm-serif-display);
+            display: inline-flex;
+        }
+
+    }
+
+    .animation {
+
+        position: relative;
+
+        &__eclat {
+            position: absolute;
+            top: -20rem;
+            left: 0;
+        }
+
+        &__valentin {
+
+            width: 45.8rem;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        &__pokeball {
+
+            position: absolute;
+            bottom: 34.4rem;
+            left: 35.5rem;
+
+        }
+
+        &__html {
+
+            position: absolute;
+            top: 20rem;
+            left: 60rem;
+
+        }
+
+        &__css {
+
+            position: absolute;
+            top: 4rem;
+            left: 58rem;
+
+        }
+
+        &__vuejs {
+
+            position: absolute;
+            top: 4rem;
+            left: 35rem;
+
+        }
+
+        &__javascript {
+
+            position: absolute;
+            top: 20rem;
+            left: 38rem;
+            width: 6rem;
+
+        }
+
+    }
+
+}
