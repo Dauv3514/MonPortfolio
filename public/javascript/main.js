@@ -1,5 +1,3 @@
-
-
 function cacher() {
   document.getElementById('vuejs').style.visibility='hidden';
   document.getElementById('css').style.visibility='hidden';
@@ -25,19 +23,32 @@ function apparaitre() {
 window.setTimeout(apparaitre, 12040);
 
 
-let boutontech = document.getElementById('boutontech');
-let boutondesign = document.getElementById('boutondesign');
-let listetech = document.getElementById('listetech');
-let listedesign = document.getElementById('listedesign');
 
-function toggle() {
 
-  boutondesign.addEventListener('click', function(toggle) {
 
-    listetech.style.visibility='hidden';
-    listedesign.style.visibility='visible';
-    console.log(toggle);
 
-  });
 
-}
+
+
+let boutonTech = document.getElementById('bouton-tech');
+let boutonDesign = document.getElementById('bouton-design');
+let listeTech = document.getElementById('liste-tech');
+let listeDesign = document.getElementById('liste-design');
+
+
+
+
+  boutonDesign.addEventListener('click', toggleBouton);
+
+  boutonTech.addEventListener('click', toggleBouton);
+
+  function toggleBouton() {
+
+    let changer = document.getElementById('changer');
+
+    changer.classList.toggle('droite');
+
+  }
+
+
+

@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Serif+Display&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kreon&display=swap" rel="stylesheet">
-    <script src="./javascript/main.js"> </script>
+    <script defer src="./javascript/main.js"> </script>
 </head>
 <body>
     <header>
@@ -179,11 +179,13 @@
 
         <h2 class="competences__titre"> Compétences </h2>
         <div class="competences__toggle">
-            <div class="competences__changer">
-                <button class="competences__tech" id="boutontech"> Tech </button>
-                <button class="competences__design" id="boutondesign"> Design </button>
+
+            <div class="competences__changer" id="changer">
+                <button id="bouton-tech"> Tech </button>
+                <button id="bouton-design"> Design </button>
             </div>
-            <div class="competences__liste" id="listetech">
+
+            <div class="competences__liste-tech competences-liste" id="liste-tech">
                 <article>
                     <img src="./img/vuejs.svg">
                     <p> Vue.js </p>
@@ -217,7 +219,8 @@
                     <p> MySQL </p>
                 </article>
             </div>
-            <div class="competences__liste2" id="listedesign">
+
+            <div class="competences__liste-design competences-liste" id="liste-design">
                 <article>
                     <img src="./img/photoshop.svg">
                     <p> Photoshop </p>
@@ -251,12 +254,13 @@
                     <p> Google Font </p>
                 </article>
             </div>
+
         </div>        
     </section>
 
     <section id="apropos" class="apropos">
 
-        <h2 class="apropos__titre"> A propos </h2>
+        <h2 class="apropos__titre"> À propos </h2>
         <div class="apropos__bloc">
             <div class="apropos__engloberond">
                 <div class="apropos__rond"></div>
