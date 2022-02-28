@@ -22,8 +22,9 @@
         border-radius: 2rem;
 
         p {
-            font-size: var(--font-size-grand);
-            padding-left: 5rem;
+            font-size: var(--font-size-intermediaire);
+            line-height: 4rem;
+            padding-left: 10rem;
         }
 
     }
@@ -70,8 +71,8 @@
 
     &__rond {
 
-        height: 3.2rem;
-        width: 3.2rem;
+        height: 3rem;
+        width: 3rem;
         background-color: var(--color-gris-clair);
         border-radius: 100%;
         display: inline;
@@ -92,14 +93,14 @@
         padding-bottom: 10rem;
 
         p {
-            padding-left: 3rem;
+            padding-left: 8rem;
         }
 
         a {
             border: 3rem double var(--color-gris-vert);
             display: flex;
             align-items: center;
-            padding-left: 6rem;
+            margin-left: 6rem;
         }
 
     }

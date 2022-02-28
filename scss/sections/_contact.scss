@@ -27,22 +27,41 @@
         border: 0.2rem solid var(--color-vert);
         border-radius: 100%;
         margin-top: 16rem;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
     }
+
+    &__rond:hover &__image {
+
+        visibility: visible;
+    
+    }
+
+    &__image {
+
+        visibility: hidden;
+
+    }
+
 
     &__eclatgauche {
 
         position: absolute;
-        left: 15rem;
-        top: -10rem;
+        left: 27rem;
+        top: -5rem;
+        z-index: 8;
 
     }
 
     &__eclatdroite {
 
         position: absolute;
-        right: 15rem;
-        top: -10rem;
+        right: 27rem;
+        top: -5rem;
+        z-index: 8;
 
     }
 

@@ -2,6 +2,7 @@ html {
     font-size: 62.5%; // 1rem = 10px;
     background-color: var(--color-noir);
     color: var(--color-blanc);
+    scroll-behavior: smooth;
 }
 
 body {

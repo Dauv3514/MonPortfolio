@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Serif+Display&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kreon&display=swap" rel="stylesheet">
+    <script src="./javascript/main.js"> </script>
 </head>
 <body>
     <header>
@@ -24,19 +27,19 @@
                 <li class="nav__link"> <a href="/contact.html">contact</a> </li>
             </ul>
         </nav> -->
-        <nav>
-            <a class="cv"> CV </a>
-            <section class="liens">
-                <a href=""> Accueil </a>
-                <a href=""> Projets </a>
-                <a href=""> Compétences </a>
-                <a href=""> À propos </a>
-                <a href=""> Contact </a>
+        <nav class="navbar">
+            <a class="navbar__cv" target="_blank" href="https://media-exp1.licdn.com/dms/document/C4D2DAQHu8MQ2edF1xg/profile-treasury-document-pdf-analyzed/0/1638008266236?e=1645999200&v=beta&t=Tvsqvk7CDbKJhitQsPOquaegHU5tG2t-Sqsj4DKRPTI"> CV </a>
+            <section class="navbar__bloc-liens"> 
+                <a class="navbar__liens" href="#accueil"> Accueil </a>
+                <a class="navbar__liens" href="#projets"> Projets </a>
+                <a class="navbar__liens" href="#competences"> Compétences </a>
+                <a class="navbar__liens" href="#apropos"> À propos </a>
+                <a class="navbar__liens" href="#contact"> Contact </a>
             </section>
         </nav>
     </header>
 
-    <section class="accueil">
+    <section id="accueil" class="accueil">
 
         <div class="presentation">
             <h1 class="presentation__nom"> Valentin Dauvier </h1>
@@ -47,24 +50,53 @@
             <p class="presentation__description"> 
                 J’aime dompter les langages pour en faire un savoureux mélange et rendre l’interface visuelle la plus attrayante possible. 
             </p>
-            <a class="presentation__contact" href=""> 
+            <a class="presentation__contact" href="mailto:valentindauvier@hotmail.fr"> 
                 Contactez moi 
             </a>
         </div>
 
         <div class="animation">
-            <img class="animation__vuejs" src="./img/vuejs.svg">
-            <img class="animation__css"src="./img/css.svg">
-            <img class="animation__javascript" src="./img/javascript.svg">
-            <img class="animation__html" src="./img/html.svg">
-            <img class="animation__eclat" src="./img/eclats-vert.svg">
-            <img class="animation__pokeball" src="./img/pokeball.svg">
-            <img class="animation__valentin" src="./img/valentin.svg">
+            <img class="animation__vuejs" id="vuejs"src="./img/vuejs.svg">
+            <img class="animation__css" id="css" src="./img/css.svg">
+            <img class="animation__javascript" id="javascript" src="./img/javascript.svg">
+            <img class="animation__html" id="html" src="./img/html.svg">
+            <img class="animation__eclat" id="eclat" src="./img/eclats-vert.svg">
+            <img class="animation__pokeball" id="pokeball" src="./img/pokeball.svg">
+            <img class="animation__valentin" id="valentin" src="./img/valentin.svg">
+            <p class="animation__rotate" id="rotate"> {  transform: rotate(30deg);  } </p>
+            <p class="animation__opacity" id="opacity"> { opacity: 0.5; } </p>
+            <p class="animation__position" id="position"> { position: relative; } </p>
+            <div class="animation__valentinpc" id="valentinpc">
+                <!-- <img class="animation__pc" src="./img/valentinpc.svg"> -->
+                <div class="animation__description">
+                    <span class="animation__lettre">    T </span>
+                    <span class="animation__lettre">    R </span> 
+                    <span class="animation__lettre">    A </span> 
+                    <span class="animation__lettre">    V </span> 
+                    <span class="animation__lettre">    A </span> 
+                    <span class="animation__lettre">    I </span> 
+                    <span class="animation__lettre">    L </span> 
+                    <span class="animation__lettre">    L </span> 
+                    <span class="animation__lettre">    O </span> 
+                    <span class="animation__lettre">    N </span>
+                    <span class="animation__lettre">    S </span> 
+                    <br>
+                    <span class="animation__lettre">    E </span> 
+                    <span class="animation__lettre">    N </span> 
+                    <span class="animation__lettre">    S </span> 
+                    <span class="animation__lettre">    E </span> 
+                    <span class="animation__lettre">    M </span> 
+                    <span class="animation__lettre">    B </span> 
+                    <span class="animation__lettre">    L </span> 
+                    <span class="animation__lettre">    E </span> 
+                </div>
+                
+            </div>
         </div>
 
     </section>
 
-    <section class="projets">
+    <section id="projets" class="projets">
 
         <h2 class="titre-section"> Mes projets </h2> 
         <div class="projets__bloc">
@@ -143,15 +175,15 @@
         
     </section>
 
-    <section class="competences">
+    <section id="competences" class="competences">
 
         <h2 class="competences__titre"> Compétences </h2>
         <div class="competences__toggle">
             <div class="competences__changer">
-                <button class="competences__tech"> Tech </button>
-                <button class="competences__design"> Design </button>
+                <button class="competences__tech" id="boutontech"> Tech </button>
+                <button class="competences__design" id="boutondesign"> Design </button>
             </div>
-            <div class="competences__liste">
+            <div class="competences__liste" id="listetech">
                 <article>
                     <img src="./img/vuejs.svg">
                     <p> Vue.js </p>
@@ -185,10 +217,44 @@
                     <p> MySQL </p>
                 </article>
             </div>
+            <div class="competences__liste2" id="listedesign">
+                <article>
+                    <img src="./img/photoshop.svg">
+                    <p> Photoshop </p>
+                </article>
+                <article>
+                    <img src="./img/html.svg">
+                    <p> Figma </p>
+                </article>
+                <article>
+                    <img src="./img/css.svg">
+                    <p> Canva </p>
+                </article>
+                <article>
+                    <img src="./img/symfony.svg">
+                    <p> Dribble </p>
+                </article>
+                <article>
+                    <img src="./img/javascript.svg">
+                    <p> Da Font </p>
+                </article>
+                <article>
+                    <img src="./img/sass.svg">
+                    <p> Unsplash </p>
+                </article>
+                <article>
+                    <img src="./img/php.svg">
+                    <p> Adobe Color </p>
+                </article>
+                <article>
+                    <img src="./img/MySQL.svg">
+                    <p> Google Font </p>
+                </article>
+            </div>
         </div>        
     </section>
 
-    <section class="apropos">
+    <section id="apropos" class="apropos">
 
         <h2 class="apropos__titre"> A propos </h2>
         <div class="apropos__bloc">
@@ -197,7 +263,7 @@
                 <div class="apropos__rond"></div>
                 <div class="apropos__rond"></div>
             </div>
-            <p> <span class="apropos__gris"> 1 </span> <span class="apropos__violet"> let </span> <span class="apropos__bleu"> me </span> <span class="apropos__vert">= Humain(nom: </span><span class="apropos__rouge"> "Valentin Dauvier" </span> <span class="apropos__vert">)</span> </p>
+            <p> <span class="apropos__gris"> 1 </span> <span class="apropos__violet"> let </span> <span class="apropos__bleu"> me </span> <span class="apropos__vert">= Humain(nom:</span><span class="apropos__rouge"> "Valentin Dauvier"</span><span class="apropos__vert">)</span> </p>
             <p> <span class="apropos__gris"> 2 </span> <span class="apropos__bleu">me</span><span class="apropos__vert">.premierSoftskill = </span><span class="apropos__rouge"> "Curiosité" </span> </p>
             <p> <span class="apropos__gris"> 3 </span> <span class="apropos__bleu">me</span><span class="apropos__vert">.deuxiemeSoftskill = </span><span class="apropos__rouge"> "Créativité" </span> </p>
             <p> <span class="apropos__gris"> 4 </span> <span class="apropos__bleu">me</span><span class="apropos__vert">.troisiemeSoftskill = </span><span class="apropos__rouge"> "Persévérance" </span> </p>
@@ -206,21 +272,21 @@
             <p> <span class="apropos__gris"> 7 </span> <span class="apropos__bleu">me</span><span class="apropos__vert">.troisiemeHobby = </span> <span class="apropos__rouge"> "Science-Fiction" </span> </p>
             <div class="apropos__experiences">
                 <p> <span class="gris"> 10 </span> <span class="apropos__bleu">me</span><span class="apropos__vert">.experiencesetformations = </span></p>
-                <a> <img src="./img/linkedin-vert.svg"> </a>
+                <a target= "_blank" href="https://www.linkedin.com/in/valentin-dauvier-bb0b95b1/"> <img src="./img/linkedin-vert.svg"> </a>
             </div>      
         </div>
 
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
 
         <h2 class="titre-section"> Contact </h2> 
         <p> Alors, on travaille ensemble ? </p>
         <div class="contact__animation">
             <img class="contact__eclatgauche" src="./img/eclatsvert2.svg">
-            <div class="contact__rond">
-                <img class="contact__image" src="">
-            </div>
+            <a href="" class="contact__rond">
+                <img class="contact__image" src="./img/homer.svg">
+            </a>
             <img class="contact__eclatdroite" src="./img/eclatsvert2.svg">
         </div>
 
@@ -230,9 +296,9 @@
         <div class="footer">
             <div class="footer__ligne"></div>
             <div class="footer__liens">
-                <a> <p> CV </p> </a>
-                <a> <img src="./img/github.svg"> </a>
-                <a> <img class="footer__linkedin" src="./img/linkedin-blanc.svg"> </a>
+                <a target="_blank" href="https://media-exp1.licdn.com/dms/document/C4D2DAQHu8MQ2edF1xg/profile-treasury-document-pdf-analyzed/0/1638008266236?e=1645999200&v=beta&t=Tvsqvk7CDbKJhitQsPOquaegHU5tG2t-Sqsj4DKRPTI"> <p> CV </p> </a>
+                <a  target= "_blank" href="https://github.com/Dauv3514"> <img src="./img/github.svg"> </a>
+                <a target= "_blank" href="https://www.linkedin.com/in/valentin-dauvier-bb0b95b1/"> <img class="footer__linkedin" src="./img/linkedin-blanc.svg"> </a>
             </div>
             <p class="footer__copyright"> © Design et Intégration par Valentin Dauvier </p>
         </div>

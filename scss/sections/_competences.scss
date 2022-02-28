@@ -6,7 +6,7 @@
     
     padding-bottom: 3rem;
     border-bottom: 0.4rem solid var(--color-vert);
-    width: 16%;
+    width: 18%;
 
     }
 
@@ -51,16 +51,21 @@
 
     }
 
-    &__liste {
+    &__liste, &__liste2 {
 
         display: flex;
         flex-wrap: wrap;
         width: 76.8rem;
 
+    }
+
+    &__liste2 {
+
+       visibility: hidden;
 
     }
 
-    &__liste > article {
+    &__liste > article, &__liste2 > article {
 
         height: 14rem;
         width: 13.2rem;
@@ -92,10 +97,12 @@
         img {
             max-height: auto;
             max-width: 60%;
+            padding-bottom: 1rem;
         }
 
         p {
             font-size: var(--font-size-petit);
+            font-family: var(--font-family-roboto-mono);
         }
 
     }
