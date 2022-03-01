@@ -1,14 +1,7 @@
+// Animation pokemon
+
 function cacher() {
-  document.getElementById('vuejs').style.visibility='hidden';
-  document.getElementById('css').style.visibility='hidden';
-  document.getElementById('javascript').style.visibility='hidden';
-  document.getElementById('html').style.visibility='hidden';
-  document.getElementById('eclat').style.visibility='hidden';
-  document.getElementById('pokeball').style.visibility='hidden';
-  document.getElementById('valentin').style.visibility='hidden';
-  document.getElementById('rotate').style.visibility='hidden';
-  document.getElementById('opacity').style.visibility='hidden';
-  document.getElementById('position').style.visibility='hidden';
+  document.getElementById('animation-pokemon').style.visibility='hidden';
 }
   window.setTimeout(cacher, 12000);
 
@@ -22,33 +15,56 @@ function apparaitre() {
 
 window.setTimeout(apparaitre, 12040);
 
-
-
-
-
-
-
-
+// Animation Toggle Compétences
 
 let boutonTech = document.getElementById('bouton-tech');
 let boutonDesign = document.getElementById('bouton-design');
-let listeTech = document.getElementById('liste-tech');
-let listeDesign = document.getElementById('liste-design');
 
+boutonDesign.addEventListener('click', toggleBouton);
 
+boutonTech.addEventListener('click', toggleBouton);
 
-
-  boutonDesign.addEventListener('click', toggleBouton);
-
-  boutonTech.addEventListener('click', toggleBouton);
-
-  function toggleBouton() {
+function toggleBouton() {
 
     let changer = document.getElementById('changer');
 
     changer.classList.toggle('droite');
 
+/*     document.getElementById('liste-tech').style.  visibility='hidden';
+
+    document.getElementById('liste-design').style.visibility='visible'; */
+
+}
+
+// Animation Contact (simpson) 
+
+function disparitionhomer() {
+    
+    document.getElementById('rondcontact').classList.add('disparitionhomer')
+
+}
+    setInterval(disparitionhomer, 2000);
+
+function apparitionhomer2() {
+    
+    document.getElementById('rondcontact').classList.add('apparitionhomer2')
+  
+}
+    setInterval(apparitionhomer2, 2010);
+
+function disparitionhomer2() {
+    
+      document.getElementById('rondcontact').classList.add('disparitionhomer2')
+    
   }
+    setInterval(disparitionhomer2, 4000);
+
+function apparitionmail() {
+    
+      document.getElementById('rondcontact').classList.add('apparitionmail')
+    
+}
+    setInterval(apparitionmail, 4010);
 
 
 

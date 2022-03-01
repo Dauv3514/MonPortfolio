@@ -14,6 +14,7 @@
 
         @include flex-align;
         flex-direction: column;
+        position: relative;
 
     }
 
@@ -51,6 +52,30 @@
             color: var(--color-gris-clair);
         }
 
+        &.droite .competences__liste-design {
+            visibility: visible;
+        } 
+
+        &.droite + .conteneur-liste > .competences__liste-design {
+
+            visibility: visible;
+            position: relative;
+            top: 0;
+            transform: scale(0.4);
+
+        }
+
+        &.droite + .conteneur-liste > .competences__liste-tech {
+
+            visibility: hidden;
+            position: absolute;
+            top: 4rem;
+            transform: scale(1);
+
+        }
+
+        
+
         & button:first-child {
             color: var(--color-noir);
         }
@@ -68,6 +93,13 @@
 
     }
 
+    .conteneur-liste {
+
+        position: relative;
+        width: 76.8rem;
+
+    }
+
     &-liste {
 
         display: flex;
@@ -76,9 +108,27 @@
 
     }
 
-    &__liste-design {
+    &__liste-tech {
 
+        
+        position: relative;
+        top: 0;
+        left: 0;
+        visibility: visible;
+        transition: top 0.4s ease-out, transform 0.4s;
+        transform: scale(0.4);
+
+    }
+
+
+    &__liste-design {
+        
+        position: absolute;
+        top: 4rem;
+        left: 0;
         visibility: hidden;
+        transition: top 0.4s ease-out, transform 0.4s;
+        transform: scale(1);
 
     }
 

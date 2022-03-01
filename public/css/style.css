@@ -488,26 +488,28 @@ h1, h2 {
 
 .apropos {
   padding: var(--padding-sections);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .apropos__titre {
   padding-bottom: 3rem;
   border-bottom: 0.4rem solid var(--color-vert);
-  position: absolute;
-  right: 22rem;
+  align-self: flex-end;
 }
 .apropos__bloc {
-  margin: 20rem 0rem 0 22.5rem;
+  margin-top: 20rem;
   display: flex;
   flex-direction: column;
   background-color: var(--color-gris-fonce);
   border: 0.6rem double var(--color-gris-clair);
-  width: 102rem;
   border-radius: 2rem;
 }
 .apropos__bloc p {
   font-size: var(--font-size-intermediaire);
   line-height: 4rem;
   padding-left: 10rem;
+  padding-right: 10rem;
 }
 .apropos__gris {
   color: var(--color-gris-clair);
@@ -553,7 +555,6 @@ h1, h2 {
   border: 3rem double var(--color-gris-vert);
   display: flex;
   align-items: center;
-  margin-left: 6rem;
 }
 
 .competences {
@@ -568,6 +569,7 @@ h1, h2 {
   display: flex;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 .competences__changer {
   margin-top: var(--padding-apres-titre);
@@ -597,6 +599,21 @@ h1, h2 {
 .competences__changer.droite button:first-child {
   color: var(--color-gris-clair);
 }
+.competences__changer.droite .competences__liste-design {
+  visibility: visible;
+}
+.competences__changer.droite + .conteneur-liste > .competences__liste-design {
+  visibility: visible;
+  position: relative;
+  top: 0;
+  transform: scale(0.4);
+}
+.competences__changer.droite + .conteneur-liste > .competences__liste-tech {
+  visibility: hidden;
+  position: absolute;
+  top: 4rem;
+  transform: scale(1);
+}
 .competences__changer button:first-child {
   color: var(--color-noir);
 }
@@ -610,13 +627,30 @@ h1, h2 {
   color: var(--color-gris-clair);
   z-index: 6;
 }
+.competences .conteneur-liste {
+  position: relative;
+  width: 76.8rem;
+}
 .competences-liste {
   display: flex;
   flex-wrap: wrap;
   width: 76.8rem;
 }
+.competences__liste-tech {
+  position: relative;
+  top: 0;
+  left: 0;
+  visibility: visible;
+  transition: top 0.4s ease-out, transform 0.4s;
+  transform: scale(0.4);
+}
 .competences__liste-design {
+  position: absolute;
+  top: 4rem;
+  left: 0;
   visibility: hidden;
+  transition: top 0.4s ease-out, transform 0.4s;
+  transform: scale(1);
 }
 .competences-liste > article {
   height: 14rem;
@@ -671,23 +705,51 @@ h1, h2 {
   border-radius: 100%;
   margin-top: 16rem;
   z-index: 10;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.contact__rond:hover .contact__image {
+.contact__image-reflechit {
+  visibility: hidden;
+  position: absolute;
+}
+.contact__image-joyeux {
+  visibility: hidden;
+  position: absolute;
+}
+.contact__image-mail {
+  visibility: hidden;
+  position: absolute;
+}
+.contact__rond:hover .contact__image-reflechit {
   visibility: visible;
 }
-.contact__image {
+.contact__rond:hover .contact__image-joyeux {
   visibility: hidden;
 }
-.contact__eclatgauche {
+.contact__rond:hover .contact__image-mail {
+  visibility: hidden;
+}
+.contact__rond:hover.disparitionhomer img:nth-child(1) {
+  visibility: hidden;
+}
+.contact__rond:hover.apparitionhomer2 img:nth-child(2) {
+  visibility: visible;
+}
+.contact__rond:hover.disparitionhomer2 img:nth-child(2) {
+  visibility: hidden;
+}
+.contact__rond:hover.apparitionmail img:nth-child(3) {
+  visibility: visible;
+}
+.contact__eclat-gauche {
   position: absolute;
   left: 27rem;
   top: -5rem;
   z-index: 8;
 }
-.contact__eclatdroite {
+.contact__eclat-droite {
   position: absolute;
   right: 27rem;
   top: -5rem;

@@ -28,7 +28,7 @@
             </ul>
         </nav> -->
         <nav class="navbar">
-            <a class="navbar__cv" target="_blank" href="https://media-exp1.licdn.com/dms/document/C4D2DAQHu8MQ2edF1xg/profile-treasury-document-pdf-analyzed/0/1638008266236?e=1645999200&v=beta&t=Tvsqvk7CDbKJhitQsPOquaegHU5tG2t-Sqsj4DKRPTI"> CV </a>
+            <a class="navbar__cv" target="_blank" href="./img/CVValentinDauvier.pdf"> CV </a>
             <section class="navbar__bloc-liens"> 
                 <a class="navbar__liens" href="#accueil"> Accueil </a>
                 <a class="navbar__liens" href="#projets"> Projets </a>
@@ -56,16 +56,18 @@
         </div>
 
         <div class="animation">
-            <img class="animation__vuejs" id="vuejs"src="./img/vuejs.svg">
-            <img class="animation__css" id="css" src="./img/css.svg">
-            <img class="animation__javascript" id="javascript" src="./img/javascript.svg">
-            <img class="animation__html" id="html" src="./img/html.svg">
-            <img class="animation__eclat" id="eclat" src="./img/eclats-vert.svg">
-            <img class="animation__pokeball" id="pokeball" src="./img/pokeball.svg">
-            <img class="animation__valentin" id="valentin" src="./img/valentin.svg">
-            <p class="animation__rotate" id="rotate"> {  transform: rotate(30deg);  } </p>
-            <p class="animation__opacity" id="opacity"> { opacity: 0.5; } </p>
-            <p class="animation__position" id="position"> { position: relative; } </p>
+            <div id="animation-pokemon">
+                <img class="animation__vuejs" id="vuejs"src="./img/vuejs.svg">
+                <img class="animation__css" id="css" src="./img/css.svg">
+                <img class="animation__javascript" id="javascript" src="./img/javascript.svg">
+                <img class="animation__html" id="html" src="./img/html.svg">
+                <img class="animation__eclat" id="eclat" src="./img/eclats-vert.svg">
+                <img class="animation__pokeball" id="pokeball" src="./img/pokeball.svg">
+                <img class="animation__valentin" id="valentin" src="./img/valentin.svg">
+                <p class="animation__rotate" id="rotate"> {  transform: rotate(30deg);  } </p>
+                <p class="animation__opacity" id="opacity"> { opacity: 0.5; } </p>
+                <p class="animation__position" id="position"> { position: relative; } </p>
+            </div>
             <div class="animation__valentinpc" id="valentinpc">
                 <!-- <img class="animation__pc" src="./img/valentinpc.svg"> -->
                 <div class="animation__description">
@@ -185,75 +187,79 @@
                 <button id="bouton-design"> Design </button>
             </div>
 
-            <div class="competences__liste-tech competences-liste" id="liste-tech">
-                <article>
-                    <img src="./img/vuejs.svg">
-                    <p> Vue.js </p>
-                </article>
-                <article>
-                    <img src="./img/html.svg">
-                    <p> Html </p>
-                </article>
-                <article>
-                    <img src="./img/css.svg">
-                    <p> Css </p>
-                </article>
-                <article>
-                    <img src="./img/symfony.svg">
-                    <p> Symfony </p>
-                </article>
-                <article>
-                    <img src="./img/javascript.svg">
-                    <p> JavaScript </p>
-                </article>
-                <article>
-                    <img src="./img/sass.svg">
-                    <p> Sass </p>
-                </article>
-                <article>
-                    <img src="./img/php.svg">
-                    <p> Php </p>
-                </article>
-                <article>
-                    <img src="./img/MySQL.svg">
-                    <p> MySQL </p>
-                </article>
-            </div>
+            <section class="conteneur-liste">
 
-            <div class="competences__liste-design competences-liste" id="liste-design">
-                <article>
-                    <img src="./img/photoshop.svg">
-                    <p> Photoshop </p>
-                </article>
-                <article>
-                    <img src="./img/html.svg">
-                    <p> Figma </p>
-                </article>
-                <article>
-                    <img src="./img/css.svg">
-                    <p> Canva </p>
-                </article>
-                <article>
-                    <img src="./img/symfony.svg">
-                    <p> Dribble </p>
-                </article>
-                <article>
-                    <img src="./img/javascript.svg">
-                    <p> Da Font </p>
-                </article>
-                <article>
-                    <img src="./img/sass.svg">
-                    <p> Unsplash </p>
-                </article>
-                <article>
-                    <img src="./img/php.svg">
-                    <p> Adobe Color </p>
-                </article>
-                <article>
-                    <img src="./img/MySQL.svg">
-                    <p> Google Font </p>
-                </article>
-            </div>
+                <div class="competences__liste-tech competences-liste" id="liste-tech">
+                    <article>
+                        <img src="./img/vuejs.svg">
+                        <p> Vue.js </p>
+                    </article>
+                    <article>
+                        <img src="./img/html.svg">
+                        <p> Html </p>
+                    </article>
+                    <article>
+                        <img src="./img/css.svg">
+                        <p> Css </p>
+                    </article>
+                    <article>
+                        <img src="./img/symfony.svg">
+                        <p> Symfony </p>
+                    </article>
+                    <article>
+                        <img src="./img/javascript.svg">
+                        <p> JavaScript </p>
+                    </article>
+                    <article>
+                        <img src="./img/sass.svg">
+                        <p> Sass </p>
+                    </article>
+                    <article>
+                        <img src="./img/php.svg">
+                        <p> Php </p>
+                    </article>
+                    <article>
+                        <img src="./img/MySQL.svg">
+                        <p> MySQL </p>
+                    </article> 
+                </div>
+
+                <div class="competences__liste-design competences-liste" id="liste-design">
+                    <article>
+                        <img src="./img/photoshop.svg">
+                        <p> Photoshop </p>
+                    </article>
+                    <article>
+                        <img src="./img/html.svg">
+                        <p> Figma </p>
+                    </article>
+                    <article>
+                        <img src="./img/css.svg">
+                        <p> Canva </p>
+                    </article>
+                    <article>
+                        <img src="./img/symfony.svg">
+                        <p> Dribble </p>
+                    </article>
+                    <article>
+                        <img src="./img/javascript.svg">
+                        <p> Da Font </p>
+                    </article>
+                    <article>
+                        <img src="./img/sass.svg">
+                        <p> Unsplash </p>
+                    </article>
+                    <article>
+                        <img src="./img/php.svg">
+                        <p> Adobe Color </p>
+                    </article>
+                    <article>
+                        <img src="./img/MySQL.svg">
+                        <p> Google Font </p>
+                    </article>
+                </div>
+            
+            </section>
 
         </div>        
     </section>
@@ -275,7 +281,7 @@
             <p> <span class="apropos__gris"> 6 </span> <span class="apropos__bleu">me</span><span class="apropos__vert">.deuxiemeHobby = </span> <span class="apropos__rouge"> "Sport" </span> </p>
             <p> <span class="apropos__gris"> 7 </span> <span class="apropos__bleu">me</span><span class="apropos__vert">.troisiemeHobby = </span> <span class="apropos__rouge"> "Science-Fiction" </span> </p>
             <div class="apropos__experiences">
-                <p> <span class="gris"> 10 </span> <span class="apropos__bleu">me</span><span class="apropos__vert">.experiencesetformations = </span></p>
+                <p> <span class="gris"> 10 </span> <span class="apropos__bleu">me</span><span class="apropos__vert">.experiencesEtEormations = </span></p>
                 <a target= "_blank" href="https://www.linkedin.com/in/valentin-dauvier-bb0b95b1/"> <img src="./img/linkedin-vert.svg"> </a>
             </div>      
         </div>
@@ -287,11 +293,13 @@
         <h2 class="titre-section"> Contact </h2> 
         <p> Alors, on travaille ensemble ? </p>
         <div class="contact__animation">
-            <img class="contact__eclatgauche" src="./img/eclatsvert2.svg">
-            <a href="" class="contact__rond">
-                <img class="contact__image" src="./img/homer.svg">
+            <img class="contact__eclat-gauche" src="./img/eclatsvert2.svg">
+            <a href="" class="contact__rond" id="rondcontact">
+                <img class="contact__image-reflechit"  src="./img/homer.svg">
+                <img class="contact__image-joyeux"  src="./img/homercontent.svg">
+                <img class="contact__image-mail"  src="./img/mail.svg">
             </a>
-            <img class="contact__eclatdroite" src="./img/eclatsvert2.svg">
+            <img class="contact__eclat-droite" src="./img/eclatsvert2.svg">
         </div>
 
     </section>
