@@ -498,7 +498,7 @@ h1, h2 {
   align-self: flex-end;
 }
 .apropos__bloc {
-  margin-top: 20rem;
+  margin-top: 14rem;
   display: flex;
   flex-direction: column;
   background-color: var(--color-gris-fonce);
@@ -606,13 +606,13 @@ h1, h2 {
   visibility: visible;
   position: relative;
   top: 0;
-  transform: scale(0.4);
+  /* transform: scale(0.4); */
 }
 .competences__changer.droite + .conteneur-liste > .competences__liste-tech {
   visibility: hidden;
   position: absolute;
   top: 4rem;
-  transform: scale(1);
+  /* transform: scale(1); */
 }
 .competences__changer button:first-child {
   color: var(--color-noir);
@@ -642,7 +642,7 @@ h1, h2 {
   left: 0;
   visibility: visible;
   transition: top 0.4s ease-out, transform 0.4s;
-  transform: scale(0.4);
+  /* transform: scale(0.4); */
 }
 .competences__liste-design {
   position: absolute;
@@ -650,7 +650,7 @@ h1, h2 {
   left: 0;
   visibility: hidden;
   transition: top 0.4s ease-out, transform 0.4s;
-  transform: scale(1);
+  /* transform: scale(1); */
 }
 .competences-liste > article {
   height: 14rem;
@@ -776,12 +776,18 @@ h1, h2 {
   padding-top: 2.9rem;
   padding-bottom: 3.4rem;
   width: calc((100% - 16rem) / 3);
+  position: relative;
+  top: 0;
 }
 .projets__bloc > article:nth-child(3n+2) {
   margin: 0 8rem;
 }
 .projets__bloc > article:nth-child(n+4) {
   margin-top: 8rem;
+}
+.projets__bloc > article:hover {
+  top: -1rem;
+  box-shadow: 0rem 0.5rem 1rem 0.2rem var(--color-vert);
 }
 .projets__bloc span {
   font-size: var(--font-size-petit);
