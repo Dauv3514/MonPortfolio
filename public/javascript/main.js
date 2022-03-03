@@ -36,14 +36,19 @@ function toggleBouton() {
 
 }
 
-// Animation Contact (simpson) 
+// Animation texte circulaire rond dans Contact
 
-function disparitionhomer() {
+let texte = document.querySelector('.texte p');
+texte.innerHTML = texte.innerText.split("").map
+
+// Animation dans Contact (simpson) 
+
+/* function disparitionhomer() {
     
     document.getElementById('rondcontact').classList.add('disparitionhomer')
 
 }
-    setInterval(disparitionhomer, 2000);
+    setTimeout(disparitionhomer, 2000);
 
 function apparitionhomer2() {
     
@@ -64,7 +69,7 @@ function apparitionmail() {
       document.getElementById('rondcontact').classList.add('apparitionmail')
     
 }
-    setInterval(apparitionmail, 4010);
+    setInterval(apparitionmail, 4010); */
 
 
 

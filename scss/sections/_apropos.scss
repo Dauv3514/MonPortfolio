@@ -18,7 +18,7 @@
         display: flex;
         flex-direction: column;
         background-color: var(--color-gris-fonce);
-        border: 0.6rem double var(--color-gris-clair);
+        outline: 10px double var(--color-gris-fonce);
         border-radius: 2rem;
 
         p {

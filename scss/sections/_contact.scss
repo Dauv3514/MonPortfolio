@@ -4,20 +4,32 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: relative;
 
     p {
-        padding-top: var(--padding-apres-titre);
         font-size: var(--font-size-grand);
         color: var(--color-vert);
+    }
+
+    &__accroche { 
+
+    padding-top: var(--padding-apres-titre);
+
     }
 
     &__animation {
 
         display: flex;
-        /* justify-content: center;
-        align-items: center; */
+        justify-content: center;
         position: relative;
 
+    }
+
+    &__textecirculaire {
+
+        position: absolute;
+        top: 10rem;
+        
     }
 
     &__rond {
@@ -33,92 +45,130 @@
 
     }
 
+    &__images {
+
+        position: absolute;
+        top: 8rem;
+        left: 8rem;
+
+    }
+
+    &__texte {
+
+        position: absolute;
+        top: 11rem;
+
+    }
+
+    &__texte > img {
+
+        -webkit-animation-name: rotate;
+        -moz-animation-name: rotate;
+        -ms-animation-name: rotate;
+        -o-animation-name: rotate;
+        animation-name: rotate;
+        -webkit-animation-duration: 8s;
+        -moz-animation-duration: 8s;
+        -ms-animation-duration: 8s;
+        -o-animation-duration: 8s;
+        animation-duration:8
+        s;
+        -webkit-animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+        -ms-animation-iteration-count: infinite;
+        -o-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-timing-function: linear;
+        -ms-animation-timing-function: linear;
+        -o-animation-timing-function: linear;
+        animation-timing-function: linear;
+
+    }
+
+    @-webkit-keyframes rotate {
+        from { -webkit-transform: rotate(360deg); }
+        to { -webkit-transform: rotate(0); }
+    }
+    @-moz-keyframes rotate {
+        from { -moz-transform: rotate(360deg); }
+        to { -moz-transform: rotate(0); }
+    }
+    @-ms-keyframes rotate {
+        from { -ms-transform: rotate(360deg); }
+        to { -ms-transform: rotate(0); }
+    }
+    @-o-keyframes rotate {
+        from { -o-transform: rotate(360deg); }
+        to { -o-transform: rotate(0); }
+    }
+    @keyframes rotate {
+        from { transform: rotate(360deg); }
+        to { transform: rotate(0); }
+    }
+
     &__image-reflechit {
+        height: 20rem;
+        width: 20rem;
+    }
 
-        visibility: hidden;
+    
+    &__image-reflechit, &__image-joyeux, &__image-mail {
+
         position: absolute;
-
-
-    }
-
-    &__image-joyeux {
-
-        visibility: hidden;
-        position: absolute;
-
-    }
-
-    &__image-mail {
-
-        visibility: hidden;
-        position: absolute;
-
-    }
-
-    &__rond:hover &__image-reflechit {
-
-        visibility: visible;
-    
-    }
-
-    &__rond:hover &__image-joyeux {
-
-        visibility: hidden;
-    
-    }
-
-    &__rond:hover &__image-mail {
-
-        visibility: hidden;
-    
-    }
-
-    &__rond:hover {
-    
-    &.disparitionhomer img:nth-child(1)  {
-
         visibility: hidden;
 
     }
-    
-    }
 
-    &__rond:hover {
-    
-        &.apparitionhomer2 img:nth-child(2)  {
-    
+    &__rond:hover {  
+        .contact__image-reflechit  {
+
+            animation-duration: 2.5s;
+            animation-name: reflechit;
+
+            @keyframes reflechit {
+                from {
+                    visibility: visible;
+                }
+
+                to {
+                    visibility: hidden;
+                }
+            }
+        }
+
+        .contact__image-joyeux  {
+
+            animation-duration: 2.5s;
+            animation-name: joyeux;
+            animation-delay: 2.5s;
+
+            @keyframes joyeux {
+                from {
+                    visibility: visible;
+                }
+
+                to {
+                    visibility: hidden;
+                }
+            }
+        }
+
+        .contact__image-mail  {
+
             visibility: visible;
-    
-        }
-        
-    }
+            transition-delay: 5s;
+            transition-property: visibility;
 
-    &__rond:hover {
-    
-        &.disparitionhomer2 img:nth-child(2)  {
-    
-            visibility: hidden;
-    
         }
-        
-    }
 
-    &__rond:hover {
-    
-        &.apparitionmail img:nth-child(3)  {
-    
-            visibility: visible;
-    
-        }
-        
     }
-
 
     &__eclat-gauche {
 
         position: absolute;
-        left: 27rem;
-        top: -5rem;
+        left: 10rem;
+        top: 30rem; 
         z-index: 8;
 
     }
@@ -126,8 +176,8 @@
     &__eclat-droite {
 
         position: absolute;
-        right: 27rem;
-        top: -5rem;
+        right: 10rem;
+        top: 30rem; 
         z-index: 8;
 
     }
