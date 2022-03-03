@@ -386,14 +386,14 @@ h1, h2 {
   position: relative;
 }
 .accueil .animation__valentinpc:before {
-  content: url("../../public/img/blob-vert.svg");
+  content: url("../img/blob-vert.svg");
   z-index: 10;
   position: absolute;
   left: 15rem;
   z-index: 0;
 }
 .accueil .animation__valentinpc:after {
-  content: url("../../public/img/valentinpc.svg");
+  content: url("../img/valentinpc.svg");
   z-index: 10;
   position: absolute;
   left: 24rem;

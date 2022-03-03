@@ -5,11 +5,13 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch scss/style.scss public/css/style.css"
+    "sass": "sass --watch scss/style.scss public/css/style.css",
+    "start": "nodemon app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.3",
     "sass": "^1.49.8"
   }
 }

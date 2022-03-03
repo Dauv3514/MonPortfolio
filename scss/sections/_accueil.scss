@@ -206,7 +206,7 @@
 
             &:before {
 
-                content: url('../../public/img/blob-vert.svg');
+                content: url('../img/blob-vert.svg');
                 z-index: 10;
                 position: absolute;
                 left: 15rem;
@@ -216,7 +216,7 @@
 
             &:after {
 
-                content: url('../../public/img/valentinpc.svg');
+                content: url('../img/valentinpc.svg');
                 z-index: 10;
                 position: absolute;
                 left: 24rem;
