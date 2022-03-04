@@ -88,8 +88,7 @@
 
     &__experiences {
 
-        display: flex;
-        align-items: center;
+        @include flex-align;
         padding-top: 3rem;
         padding-bottom: 10rem;
 
@@ -99,8 +98,7 @@
 
         a {
             border: 3rem double var(--color-gris-vert);
-            display: flex;
-            align-items: center;
+            @include flex-align;
         }
 
     }

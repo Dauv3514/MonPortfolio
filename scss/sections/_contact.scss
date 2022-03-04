@@ -1,8 +1,7 @@
 .contact {
 
     padding : var(--padding-sections);
-    display: flex;
-    align-items: center;
+    @include flex-align;
     flex-direction: column;
     position: relative;
 
@@ -167,7 +166,7 @@
     &__eclat-gauche {
 
         position: absolute;
-        left: 10rem;
+        left: 8rem;
         top: 30rem; 
         z-index: 8;
 

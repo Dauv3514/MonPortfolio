@@ -1,12 +1,13 @@
 footer {
 
     padding : var(--padding-sections);
-    display: flex;
-    justify-content: center;
+    @include flex-justify;
 
 }
 
 .footer {
+
+    z-index: 12;
 
     &__ligne {
 
@@ -18,8 +19,7 @@ footer {
 
     &__liens {
 
-        display: flex;
-        justify-content: center;
+        @include flex-justify;
         padding-top: 8rem;
         padding-bottom: 8rem;
 
@@ -29,9 +29,7 @@ footer {
             width: 8rem;
             border: 0.2rem solid white;
             border-radius: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-justify-align;
 
             &:nth-child(n + 2) {
 

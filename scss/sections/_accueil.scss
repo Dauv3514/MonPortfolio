@@ -148,6 +148,22 @@
             }
         }
 
+        &__vscode {
+
+            position: absolute;
+            top: 10rem;
+            left: 22rem;
+            width: 6rem;
+            animation: fallvscode 20s linear;
+
+        }
+
+        @keyframes fallvscode {
+        60% {
+                transform: translateY(20rem) translateX(16rem);
+            }
+        }
+
         &__rotate, &__opacity , &__position {
             font-size: 1.2rem;
             font-family: var(--font-family-pacifico);

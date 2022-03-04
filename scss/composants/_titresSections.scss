@@ -1,7 +1,6 @@
 .titre-section {
 
-    display: flex;
-    align-items: center;
+    @include flex-align;
 
     &::before, &::after {
 
