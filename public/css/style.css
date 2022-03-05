@@ -219,7 +219,7 @@ h1, h2 {
 }
 .accueil .presentation__specialite {
   padding-top: 1rem;
-  padding-bottom: 6rem;
+  padding-bottom: 7rem;
 }
 .accueil .presentation__specialite span {
   color: var(--color-vert);
@@ -228,17 +228,27 @@ h1, h2 {
   font-size: 6rem;
 }
 .accueil .presentation__description {
-  margin-bottom: 8rem;
+  margin-bottom: 7rem;
   line-height: 3.1rem;
+  font-size: var(--font-size-carte);
 }
 .accueil .presentation__contact {
-  padding: 3rem 5rem;
+  padding: 2rem 3rem;
   border: 0.1rem solid var(--color-vert);
   color: var(--color-vert);
-  font-size: var(--font-size-grand);
-  border-radius: 10rem;
+  font-size: var(--font-size-moyen);
+  border-radius: 4rem;
   font-family: var(--font-family-dm-serif-display);
   display: inline-flex;
+}
+.accueil .presentation__contact:hover, .accueil .presentation__contact:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 1.5em rgba(84, 235, 215, 0);
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #54EBD7;
+  }
 }
 .accueil .animation {
   position: relative;
@@ -267,7 +277,7 @@ h1, h2 {
 }
 @keyframes fallhtml {
   60% {
-    transform: translateX(-30rem) translateY(12rem);
+    transform: translateX(-28rem) translateY(14rem);
   }
 }
 .accueil .animation__css {
@@ -289,14 +299,13 @@ h1, h2 {
 }
 @keyframes fallvuejs {
   60% {
-    transform: translateY(24rem) translateX(2rem);
+    transform: translateY(26rem) translateX(2rem);
   }
 }
 .accueil .animation__javascript {
   position: absolute;
   top: 20rem;
   left: 42rem;
-  width: 6rem;
   animation: falljavascript 20s linear;
 }
 @keyframes falljavascript {
@@ -308,7 +317,6 @@ h1, h2 {
   position: absolute;
   top: 10rem;
   left: 22rem;
-  width: 6rem;
   animation: fallvscode 20s linear;
 }
 @keyframes fallvscode {
@@ -395,7 +403,13 @@ h1, h2 {
     text-shadow: 0 0 0.7rem var(--color-vert);
   }
 }
+.accueil .animation__mot2 {
+  text-align: center;
+}
 .accueil .animation__lettre {
+  animation: flash 2s linear infinite;
+}
+.accueil .animation__lettre2 {
   animation: flash 2s linear infinite;
 }
 .accueil .animation__lettre:nth-child(1) {
@@ -431,31 +445,31 @@ h1, h2 {
 .accueil .animation__lettre:nth-child(11) {
   animation-delay: 1.1s;
 }
-.accueil .animation__lettre:nth-child(12) {
+.accueil .animation__lettre2:nth-child(1) {
   animation-delay: 1.2s;
 }
-.accueil .animation__lettre:nth-child(13) {
+.accueil .animation__lettre2:nth-child(2) {
   animation-delay: 1.3s;
 }
-.accueil .animation__lettre:nth-child(14) {
+.accueil .animation__lettre2:nth-child(3) {
   animation-delay: 1.4s;
 }
-.accueil .animation__lettre:nth-child(15) {
+.accueil .animation__lettre2:nth-child(4) {
   animation-delay: 1.5s;
 }
-.accueil .animation__lettre:nth-child(16) {
+.accueil .animation__lettre2:nth-child(5) {
   animation-delay: 1.6s;
 }
-.accueil .animation__lettre:nth-child(17) {
+.accueil .animation__lettre2:nth-child(6) {
   animation-delay: 1.7s;
 }
-.accueil .animation__lettre:nth-child(18) {
+.accueil .animation__lettre2:nth-child(7) {
   animation-delay: 1.8s;
 }
-.accueil .animation__lettre:nth-child(19) {
+.accueil .animation__lettre2:nth-child(8) {
   animation-delay: 1.9s;
 }
-.accueil .animation__lettre:nth-child(20) {
+.accueil .animation__lettre2:nth-child(9) {
   animation-delay: 2s;
 }
 
@@ -889,9 +903,14 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.5s all ease-in-out;
 }
 .footer__liens > a:nth-child(n+2) {
   margin-left: 8rem;
+}
+.footer__liens > a:hover {
+  transform: translateY(1.2rem);
+  box-shadow: 0rem 0.4rem 0.8rem #FFF;
 }
 .footer__linkedin {
   height: 3.6rem;
