@@ -30,10 +30,6 @@ function toggleBouton() {
 
     changer.classList.toggle('droite');
 
-/*     document.getElementById('liste-tech').style.  visibility='hidden';
-
-    document.getElementById('liste-design').style.visibility='visible'; */
-
 }
 
 // Animation texte circulaire rond dans Contact
@@ -41,35 +37,10 @@ function toggleBouton() {
 let texte = document.querySelector('.texte p');
 texte.innerHTML = texte.innerText.split("").map
 
-// Animation dans Contact (simpson) 
+// Animation librairie ScrollReveal
 
-/* function disparitionhomer() {
-    
-    document.getElementById('rondcontact').classList.add('disparitionhomer')
+/* const sr = ScrollReveal();
 
-}
-    setTimeout(disparitionhomer, 2000);
-
-function apparitionhomer2() {
-    
-    document.getElementById('rondcontact').classList.add('apparitionhomer2')
-  
-}
-    setInterval(apparitionhomer2, 2010);
-
-function disparitionhomer2() {
-    
-      document.getElementById('rondcontact').classList.add('disparitionhomer2')
-    
-  }
-    setInterval(disparitionhomer2, 4000);
-
-function apparitionmail() {
-    
-      document.getElementById('rondcontact').classList.add('apparitionmail')
-    
-}
-    setInterval(apparitionmail, 4010); */
-
+sr.reveal('#presentation'); */
 
 
