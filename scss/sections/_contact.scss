@@ -1,6 +1,6 @@
 .contact {
 
-    padding : var(--padding-sections);
+    padding : var(--padding-sections2);
     @include flex-align;
     flex-direction: column;
     position: relative;
@@ -178,6 +178,101 @@
         right: 10rem;
         top: 30rem; 
         z-index: 8;
+
+    }
+
+    @media (max-width: 800px) { 
+
+        p {
+
+            font-size: var(--font-size-intermediaire);
+
+        }
+
+    }
+
+    @media (max-width: 680px) { 
+
+        p {
+
+            font-size: var(--font-size-moyen);
+
+        }
+
+        &__texte img {
+
+            height: 27rem;
+            width: 27rem;
+            margin-top: 1.5rem;
+
+        }
+
+        &__rond {
+
+            height: 20rem;
+            width: 20rem;
+
+        }
+
+        &__images {
+
+            position: absolute;
+            top: 4rem;
+            left: 4rem;
+    
+        }
+
+        &__images > img {
+
+            height: 12rem;
+            width: 12rem;
+
+        }
+
+
+    }
+
+    @media (max-width: 570px) { 
+
+        p {
+
+            font-size: 2rem;
+
+        }
+
+    }
+
+    @media (max-width: 500px) { 
+
+        padding-right: 2rem;
+        padding-left: 2rem;
+
+        p {
+
+            font-size: 1.8rem;
+
+        }
+
+    }
+
+    @media (max-width: 450px) { 
+
+
+        p {
+
+            font-size: 1.6rem;
+
+        }
+
+    }
+
+    @media (max-width: 390px) { 
+
+        p {
+
+            font-size: 1.4rem;
+
+        }
 
     }
 

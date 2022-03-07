@@ -7,7 +7,7 @@
         content:'';
         background-color: var(--color-vert);
         height: 0.4rem;
-        width: 30rem;
+        width: 20rem;
         display: block;
 
     }
@@ -23,5 +23,97 @@
         margin-left: 10rem;
         
     }
+
+    @media screen and (max-width: 900px) {
+
+        &::before,
+        &::after {
+            width: 15rem;
+        }
+
+        &::before {
+            margin-right: 8rem;
+        }
+
+        &::after {
+            margin-left: 8rem;
+        }
+
+    }
+
+    @media screen and (max-width: 680px) {
+
+        font-size: 4rem; 
+
+        &::before,
+        &::after {
+            width: 12rem;
+        }
+
+        &::before {
+            margin-right: 6rem;
+        }
+
+        &::after {
+            margin-left: 6rem;
+        }
+
+    }
+
+    @media screen and (max-width: 570px) {
+
+        font-size: 3.2rem; 
+
+        &::before,
+        &::after {
+            width: 10rem;
+        }
+
+        &::before {
+            margin-right: 6rem;
+        }
+
+        &::after {
+            margin-left: 6rem;
+        }
+
+    }
+
+    @media screen and (max-width: 500px) {
+
+        font-size: 2.8rem; 
+
+        &::before,
+        &::after {
+            width: 6rem;
+        }
+
+        &::before {
+            margin-right: 4rem;
+        }
+
+        &::after {
+            margin-left: 4rem;
+        }
+
+    }
+
+    /* @media screen and (max-width: 400px) {
+
+        &::before,
+        &::after {
+            width: 10rem;
+        }
+
+        &::before {
+            margin-right: 2rem;
+        }
+
+        &::after {
+            margin-left: 2rem;
+        }
+
+    } */
+
 
 }

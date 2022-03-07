@@ -1,8 +1,8 @@
 .apropos {
 
-    padding : var(--padding-sections);
+    padding : var(--padding-sections2);
     @include flex-align;
-    flex-direction: column;
+    flex-direction: column; 
 
     &__titre { 
     
@@ -99,6 +99,246 @@
         a {
             border: 3rem double var(--color-gris-vert);
             @include flex-align;
+        }
+
+    }
+
+    @media (max-width: 1200px) { 
+
+        &__bloc  p {
+
+            font-size: var(--font-size-moyen);
+
+        }
+
+        &__engloberond {
+
+            padding-bottom: 6rem;
+
+        }
+
+        &__rond {
+
+            height: 2.5rem;
+            width: 2.5rem;
+
+        }
+
+        &__experiences {
+    
+            a {
+
+                height: 6rem;
+                width: 6rem;
+
+            }
+
+            img {
+                
+                height: 6rem;
+                width: 6rem;
+
+            }
+
+        }
+
+    }
+
+    @media (max-width: 1000px) { 
+
+        &__bloc  p {
+
+            padding-left: 6rem;
+            padding-right: 6rem;
+
+        }
+
+        &__rond {
+
+            height: 2rem;
+            width: 2rem;
+
+        }
+
+        &__experiences {
+
+            padding-bottom: 6rem;
+
+        }
+
+    }
+
+    @media (max-width: 865px) { 
+
+        &__bloc  p {
+
+            padding-left: 6rem;
+            padding-right: 6rem;
+            font-size: 2rem;
+
+        }
+
+        &__engloberond {
+
+            padding-top: 3rem;
+            padding-bottom: 4rem;
+
+        }
+
+    }
+
+    @media (max-width: 760px) { 
+
+        &__bloc  p {
+
+            font-size: 1.8rem;
+            padding-left: 4rem;
+            padding-right: 4rem;
+
+        }
+
+        &__engloberond {
+
+            padding-left: 3rem;
+
+        }
+
+    }
+
+    @media (max-width: 680px) { 
+
+        &__bloc  p {
+
+            font-size: 1.6rem;
+
+        }
+
+        &__rond {
+            
+            &:nth-child(n + 2) {
+
+            margin-left: 2rem;
+
+            } 
+
+        }
+
+        &__experiences {
+
+            padding-bottom: 4rem;
+
+        }
+
+    }
+
+    @media (max-width: 620px) { 
+
+        &__bloc  p {
+
+            font-size: 1.4rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+
+        }
+
+        &__engloberond {
+
+            padding-left: 2rem;
+
+        }
+
+        &__rond {
+
+            height: 1.4rem;
+            width: 1.4rem;
+
+        }
+
+        &__experiences {
+
+            padding-bottom: 4rem;
+
+    
+            a {
+
+                height: 5rem;
+                width: 5rem;
+
+            }
+
+            img {
+                
+                height: 5rem;
+                width: 5rem;
+
+            }
+
+        }
+
+    }
+
+    @media (max-width: 530px) {
+
+        &__bloc  p {
+
+            font-size: 1.2rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+        }
+    
+    }
+
+    @media (max-width: 460px) {
+
+        &__bloc {
+
+            width: 30rem;
+
+        }
+
+        &__bloc  p {
+
+            font-size: 1.1rem;
+
+        }
+
+        &__experiences {
+
+            padding-bottom: 2rem;
+            display: block;
+
+            a {
+
+                height: 4rem;
+                width: 4rem;
+                margin-left: 8rem;
+
+            }
+
+            img {
+                
+                height: 4rem;
+                width: 4rem;
+
+            }
+
+        }
+
+    }
+
+    @media (max-width: 380px) {
+
+        &__bloc {
+
+            width: 27.2rem;
+
+        }
+
+        &__bloc  p {
+
+            font-size: 1rem;
+
         }
 
     }

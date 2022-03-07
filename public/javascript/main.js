@@ -32,15 +32,5 @@ function toggleBouton() {
 
 }
 
-// Animation texte circulaire rond dans Contact
-
-let texte = document.querySelector('.texte p');
-texte.innerHTML = texte.innerText.split("").map
-
-// Animation librairie ScrollReveal
-
-/* const sr = ScrollReveal();
-
-sr.reveal('#presentation'); */
 
 

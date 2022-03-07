@@ -3,6 +3,13 @@ footer {
     padding : var(--padding-sections);
     @include flex-justify;
 
+    @media (max-width: 450px) {
+
+    padding-right: 2rem;
+    padding-left: 2rem;
+
+    }
+
 }
 
 .footer {
@@ -61,6 +68,140 @@ footer {
 
         text-align: center;
         padding-bottom: 8rem;
+
+    }
+
+    @media (max-width: 1250px) { 
+
+        &__ligne {
+
+            width: 80rem;
+
+        }
+    
+    }
+
+    @media (max-width: 1000px) { 
+
+        &__ligne {
+
+            width: 60rem;
+
+        }
+
+        &__copyright {
+
+            font-size: 2rem;
+
+        }
+    
+    }
+
+    @media (max-width: 750px) { 
+
+        &__ligne {
+
+            width: 40rem;
+
+        }
+
+        &__liens {
+    
+            & > a {
+
+                height: 6rem;
+                width: 6rem;
+    
+            }
+
+        }
+
+        &__github {
+
+            height: 3.2rem;
+            width: 3.2rem;
+
+        }
+
+        &__linkedin {
+
+            height: 2.8rem;
+            width: 2.8rem;
+
+        }
+
+        &__copyright {
+
+            font-size: 1.5rem;
+
+        }
+
+    }
+
+    @media (max-width: 550px) { 
+
+        &__ligne {
+
+            width: 34rem;
+            margin: auto;
+
+        }
+
+        &__copyright {
+
+            font-size: 1.2rem;
+
+        }
+    
+    }
+
+    @media (max-width: 450px) {
+
+
+        &__ligne {
+
+            width: 25rem;
+            margin: auto;
+
+        }
+
+        &__liens {
+    
+            & > a {
+
+                height: 4rem;
+                width: 4rem;
+
+                &:nth-child(n + 2) {
+
+                    margin-left: 5rem;
+    
+                }
+    
+            }
+
+        }
+
+        &__github {
+
+            height: 2.6rem;
+            width: 2.6rem;
+
+        }
+
+        &__linkedin {
+
+            height: 2.1rem;
+            width: 2.1rem;
+
+        }
+
+        &__copyright {
+
+            font-size: 1rem;
+
+        }
+
 
     }
 
