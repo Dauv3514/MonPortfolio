@@ -32,5 +32,26 @@ function toggleBouton() {
 
 }
 
+// Menu Hamburger
 
+let ouvertureMenu = document.getElementById('ouvrir');
+let fermetureMenu = document.getElementById('ferme');
+let liensMenu = document.getElementById('liens');
+
+ouvertureMenu.addEventListener('click', show);
+fermetureMenu.addEventListener('click', close);
+liensMenu.addEventListener('click', close);
+
+function show() {
+  
+  liensMenu.style.display = 'flex';
+  liensMenu.style.top = '0';
+
+}
+
+function close() {
+
+  liensMenu.style.top = '-100%';
+
+}
 

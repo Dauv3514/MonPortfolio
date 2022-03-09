@@ -18,25 +18,17 @@
 </head>
 <body>
     <header>
-        <!-- <nav class="nav">
-            <div class="nav__rondCv">
-                <p> CV </p>
-            </div>
-            <ul>
-                <li class="nav__link nav__link--active">work</li>
-                <li class="nav__link"> <a href="/about.html">about</a> </li>
-                <li class="nav__link"> <a href="/contact.html">contact</a> </li>
-            </ul>
-        </nav> -->
         <nav class="navbar">
-            <a class="navbar__cv" target="_blank" href="/cv"> CV </a>
-            <section class="navbar__bloc-liens"> 
-                <a class="navbar__liens" href="#accueil"> Accueil </a>
-                <a class="navbar__liens" href="#projets"> Projets </a>
-                <a class="navbar__liens" href="#competences"> Compétences </a>
-                <a class="navbar__liens" href="#apropos"> À propos </a>
-                <a class="navbar__liens" href="#contact"> Contact </a>
-            </section>
+                <a class="navbar__cv" target="_blank" href="/cv"> CV </a>
+                <div id="ouvrir" class="navbar__ouvrir" ><button><img src="./img/ouvrir-menu.svg"></button></div>
+                <section class="navbar__bloc-liens" id="liens"> 
+                    <a class="navbar__liens" id="close" href="#accueil"> Accueil </a>
+                    <a class="navbar__liens" href="#projets"> Projets </a>
+                    <a class="navbar__liens" href="#competences"> Compétences </a>
+                    <a class="navbar__liens" href="#apropos"> À propos </a>
+                    <a class="navbar__liens" href="#contact"> Contact </a>
+                    <button class="navbar__ferme" id="ferme"><img src="./img/ferme-menu.svg"></button>
+                </section>
         </nav>
     </header>
 
@@ -71,7 +63,7 @@
                 <p class="animation__position" id="position"> { position: relative; } </p>
             </div>
             <div class="animation__valentinpc" id="valentinpc">
-                <!-- <img class="animation__pc" src="./img/valentinpc.svg"> -->
+                <div class="animation__blob"></div>
                 <div class="animation__description">
                     <div class="animation__mot1">
                         <span class="animation__lettre">    T </span>
@@ -108,8 +100,13 @@
         <h2 class="titre-section"> Mes projets </h2> 
         <div class="projets__bloc">
             <article>
-                <p class="projets__titre"> Site Aménagement Intérieur </p>
-                <img class="projets__image" alt="site_amenagement" src="./img/amenagement.svg"><img>
+                <p class="projets__titre"> Aménagement Intérieur </p>
+                <div class="projets__bloc-image">
+                    <img class="projets__image" alt="site_amenagement" src="./img/amenagement.svg"><img>
+                    <div class="projets__overlay">
+                        <p class="projets__description"> Site statique d'aménagement intérieur </p>     
+                    </div>
+                </div>
                 <div class="projets__technos">
                     <span> HTML </span>
                     <span> CSS </span>
@@ -117,8 +114,13 @@
                 </div>
             </article>
             <article>
-                <p class="projets__titre"> Site location participatif </p>
-                <img class="projets__image" alt="site_location" src="./img/speache.svg"><img>
+                <p class="projets__titre"> Speache </p>
+                <div class="projets__bloc-image">
+                    <img class="projets__image" alt="site_location" src="./img/speache.svg"><img>
+                    <div class="projets__overlay">
+                        <p class="projets__description"> Site de location s'appuyant sur l'économie participative (crée par un entrepreneur). J'ai aidé à l'intégration des maquettes </p> 
+                    </div>
+                </div>
                 <div class="projets__technos">
                     <span> HTML </span>
                     <span> CSS </span>
@@ -127,15 +129,25 @@
                 </div>
             </article>
             <article>
-                <p class="projets__titre"> Jeu "Attaques des Monstres" </p>
-                <img class="projets__image" alt="projet_desmonstres" src="./img/monster.svg"><img>
+                <p class="projets__titre"> Jeu "Monster Slayer" </p> 
+                <div class="projets__bloc-image">
+                    <img class="projets__image" alt="projet_desmonstres" src="./img/monster.svg"><img>
+                    <div class="projets__overlay">
+                        <p class="projets__description"> Création d'un jeu "attaque des monstres" dans le but de progresser avec un framework.  </p>
+                    </div>
+                </div>
                 <div class="projets__technos">
                     <span> Vue JS </span>
                 </div>
             </article>
             <article>
-                <p class="projets__titre"> Site pour un plaquiste </p>
-                <img class="projets__image" alt="site_plaquiste" src="./img/plaquiste.svg"><img>
+                <p class="projets__titre"> Iso plac deco </p>
+                <div class="projets__bloc-image">
+                    <img class="projets__image" alt="site_plaquiste" src="./img/plaquiste.svg"><img>
+                    <div class="projets__overlay">
+                        <p class="projets__description"> Création d'un site pour un plaquiste. En freelance, avec la collaboration d'un développeur Back-End </p> 
+                    </div>
+                </div>
                 <div class="projets__technos">
                     <span> Vue JS </span>
                     <span> Node JS </span>
@@ -143,25 +155,40 @@
             </article>
             <article>
                 <p class="projets__titre"> QR Code Generator </p>
-                <img class="projets__image" alt="projet_qrcodegenerator" src="./img/qrcodegenerator.svg"><img>
+                <div class="projets__bloc-image">
+                    <img class="projets__image" alt="projet_qrcodegenerator" src="./img/qrcodegenerator.svg"><img>
+                    <div class="projets__overlay">
+                        <p class="projets__description"> Outil permettant de générer des qr code à partir de lien personnalisés.  </p>
+                    </div>
+                </div>
                 <div class="projets__technos">
                     <span> Vue JS </span>
                     <span> Node JS </span>
                 </div>
             </article>
             <article>
-                <p class="projets__titre"> Site Sorties Handicap </p>
-                <video class="projets__image" controls poster="./img/projetecole.svg" width="100%" height="100%">
-                    <source src="./img/sitehandicap.mp4">
-                </video>
+                <p class="projets__titre"> Handi'Acc </p> 
+                <div class="projets__bloc-image">
+                    <video class="projets__image" controls poster="./img/projetecole.svg" width="100%" height="100%">
+                        <source src="./img/sitehandicap.mp4">
+                    </video>
+                    <div class="projets__overlay">
+                        <p class="projets__description"> Projet fin d'année d'école. Site internet permettant aux personnes handicapées de faire des sorties accompagné d'une autre personne.  </p>
+                    </div>
+                </div>
                 <div class="projets__technos">
                     <span> Symfony </span>
                     <span> Twig </span>
                 </div>
             </article>
             <article>
-                <p class="projets__titre"> Site pour un club de Tennis </p>
-                <img class="projets__image" alt="site_clubtennis" src="./img/tennis.svg"><img>
+                <p class="projets__titre"> Club de Tennis </p>
+                <div class="projets__bloc-image">
+                    <img class="projets__image" alt="site_clubtennis" src="./img/tennis.svg"><img>
+                    <div class="projets__overlay">
+                        <p class="projets__description"> Site pour un club de Tennis de ma ville </p> 
+                    </div>
+                </div>
                 <div class="projets__technos">
                     <span> HTML </span>
                     <span> CSS </span>
@@ -169,8 +196,13 @@
                 </div>
             </article>
             <article>
-                <p class="projets__titre"> Site Agence Web</p>
-                <img class="projets__image" src="./img/agenceweb.svg"><img>
+                <p class="projets__titre"> Agence Web </p>
+                <div class="projets__bloc-image">
+                    <img class="projets__image" src="./img/agenceweb.svg"><img>
+                    <div class="projets__overlay">
+                        <p class="projets__description"> Site "création d'une agence web fictive" </p>
+                    </div>
+                </div>
                 <div class="projets__technos">
                     <span> HTML  </span>
                     <span> CSS </span>
@@ -179,7 +211,12 @@
             </article>
             <article>
                 <p class="projets__titre"> QR Code Generator </p>
-                <img class="projets__image" src="./img/amenagement.svg"><img>
+                <div class="projets__bloc-image">
+                    <img class="projets__image" src="./img/amenagement.svg"><img>
+                    <div class="projets__overlay">
+                        <p class="projets__description"> Site "création d'une agence web fictive" </p>
+                    </div>
+                </div>
                 <div class="projets__technos">
                     <span> Vue JS </span>
                 </div>
