@@ -1,10 +1,10 @@
 .accueil {
     
     padding-top: 6rem;
-    padding-left: 28rem;
+    padding-left: 6rem;
     display: flex;
-    padding-right: 28rem;
-    height: calc(100vh - 107px);
+    padding-right: 6rem;
+    height: calc(100vh - 10.7rem); 
 
     .presentation, .animation {
 
@@ -13,6 +13,8 @@
     }
 
     .presentation {
+
+        padding-left: 20rem;
 
         &__nom {
 
@@ -46,7 +48,8 @@
         &__description {
             margin-bottom: 7rem;
             line-height: 3.1rem;
-            font-size: var(--font-size-carte);
+            font-size: 2rem;
+            padding-right: 6rem;
         }
 
         &__contact {
@@ -72,20 +75,27 @@
     }
 
     .animation {
+        
 
-        position: relative;
+        &__pokemon {
+
+            position: absolute;
+            bottom: 0rem;
+        
+        }
 
         &__eclat {
-            position: absolute; // a revoir positionnement eclat qui mange sur la navbar
-            top: -10rem;
+            position: relative; // a revoir positionnement eclat qui mange sur la navbar
+            top: 35rem;
             left: 9rem; 
+            display: none;
         }
 
         &__valentin {
 
             width: 45.8rem;
-            position: absolute;
-            bottom: 0;
+            position: relative;
+            bottom: 0rem;
             left: 0;
 
         }
@@ -101,7 +111,7 @@
         &__html {
 
             position: absolute;
-            top: 20rem;
+            top: -18rem;
             left: 60rem;
             animation: fallhtml 26s linear;
 
@@ -116,7 +126,7 @@
         &__css {
 
             position: absolute;
-            top: 4rem;
+            top: -34rem;
             left: 58rem;
             animation: fallcss 20s linear;
 
@@ -131,7 +141,7 @@
         &__vuejs {
 
             position: absolute;
-            top: 4rem;
+            top: -34rem;
             left: 35rem;
             animation: fallvuejs 20s linear;
 
@@ -146,7 +156,7 @@
         &__javascript {
 
             position: absolute;
-            top: 20rem;
+            top: -18rem;
             left: 42rem;
             animation: falljavascript 20s linear;
 
@@ -161,7 +171,7 @@
         &__vscode {
 
             position: absolute;
-            top: 10rem;
+            top: -28rem;
             left: 22rem;
             animation: fallvscode 20s linear;
 
@@ -182,9 +192,10 @@
         &__rotate {
 
             position: absolute;
-            top: 15rem;
+            top: -23rem;
             left: 42rem;
             animation: fallrotate 20s linear;
+            width: 100%;
 
         }
 
@@ -197,7 +208,7 @@
         &__opacity {
 
             position: absolute;
-            top: 20rem;
+            top: -18rem;
             left: 28rem;
             animation: fallopacity 20s linear;
 
@@ -212,9 +223,10 @@
         &__position {
 
             position: absolute;
-            top: 30rem;
+            top: -8rem;
             left: 48rem;
             animation: fallposition 20s linear;
+            width: 100%;
 
         }
 
@@ -224,18 +236,32 @@
             }
         }
 
-        &__valentinpc {
+        &__secondaire {
 
             visibility: hidden;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        &__valentinpc {
+
             position: relative;
+            left: 4rem;
+
 
             &:after {
 
-                content: url('../img/valentinpc.svg'); 
+                content: ""; 
                 position: absolute;
-                left: 24rem;
-                top: 2rem;
-                z-index: 14;
+                /* left: 3rem;
+                top: 2rem; */
+                z-index: 8;
+                background: url('../img/valentinpc.svg') no-repeat;
+                background-size: 100%;
+                display: inline-block;
+                height: 44rem;
+                width: 45.3rem;
     
             } 
 
@@ -247,8 +273,7 @@
             font-size: var(--font-size-grand);
             color: var(--color-vert);
             position: absolute;
-            left: 30rem;
-            top: 60rem;
+            top: 80rem;
 
         }
 
@@ -261,8 +286,6 @@
             transform-style: preserve-3d;
             outline: 0.1rem solid transparent;
             will-change: border-radius;
-            position: absolute;
-            right: -8rem;
 
         }
         
@@ -440,4 +463,229 @@
             animation-delay: 2s
         }
     }
+}
+
+
+@media (max-width: 1780px) {
+
+    .accueil {  
+
+        padding-right: 6rem;
+
+    .presentation { 
+
+        padding-left: 10rem;
+
+    }}
+
+}
+
+@media (max-width: 1660px) {
+
+    .accueil {  
+
+        padding-right: 9rem;
+
+    .presentation { 
+
+        padding-left: 3rem;
+
+    }}
+
+}
+
+@media (max-width: 1580px) {
+
+    .accueil {  
+
+
+    .presentation { 
+
+        &__nom, &__metier {
+
+            font-size: 5rem;
+    
+        } 
+
+        &__specialite {
+
+            font-size: 4rem;
+    
+        } 
+
+        &__description {
+
+            font-size: 1.6rem;
+
+        }
+    }}
+
+}
+
+@media (max-width: 1450px) {
+
+    .accueil {
+
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        height: 100vh; 
+
+        .presentation { 
+
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0 ;
+            padding-left: 0rem;
+
+            &__nom {
+
+                padding-bottom: 0rem;
+                border-bottom: 0rem;
+                text-align: center;
+                width: 100%;
+
+            }
+
+            &__secondaire {
+
+                display: flex;
+                justify-content: center;
+    
+            }
+
+            &__metier {
+
+                padding-top: 1rem;
+    
+            }
+    
+            &__specialite {
+
+                padding-bottom: 0rem;
+                padding-top: 0rem;
+                padding-left: 3rem;
+
+            }
+
+            &__description {
+
+                margin-bottom: 2rem;
+                position: absolute;
+                padding-right: 16rem;
+                padding-left: 16rem;
+                padding-top: 2rem;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+
+            }
+
+            &__contact {
+
+                display: none;
+
+            }
+
+        }
+
+        .animation { 
+
+            position: absolute;
+            top: 24rem;
+
+            &__pokemon {
+
+                position: absolute;
+                top: 29rem;
+
+            }
+
+            &__pokeball {
+
+                bottom: -5rem;
+    
+            }
+
+            &__blob {
+
+                width: 45rem; height: 43.2rem;
+                position: absolute;
+                top: 10rem;
+            
+            }
+
+            &__valentinpc {
+
+                position: absolute;
+                left: 4rem;
+                height: 100%;
+                width: 100%; 
+
+                &:after {
+
+                    height: 80%;
+                    width: 80%; 
+
+                }
+
+            }
+
+            &__description {
+
+                position: absolute;
+                top: 58rem;
+
+            }
+
+        }
+
+    }
+
+}
+
+@media (max-width: 950px) {
+
+    .accueil {
+
+        .presentation { 
+
+            &__nom, &__metier {
+
+                font-size: 4rem;
+        
+            } 
+    
+            &__specialite {
+    
+                font-size: 3rem;
+        
+            } 
+    
+            &__description {
+    
+                font-size: 1.4rem;
+                padding-right: 10rem;
+                padding-left: 10rem;
+    
+            }
+
+        }
+
+        .animation {
+
+            &__lettre, &__lettre2 {
+
+                font-size: var(--font-size-moyen);
+
+            }
+            
+        }
+
+    }
+
+}
+
+@media (max-width: 760px) {
+
 }

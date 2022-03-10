@@ -1,15 +1,15 @@
 // Animation pokemon
 
 function cacher() {
-  document.getElementById('animation-pokemon').style.visibility='hidden';
+  document.getElementById('animation-pokemon').style.display='none';
 }
   window.setTimeout(cacher, 12000);
 
 
 function apparaitre() { 
 
-  document.getElementById('valentinpc').style.visibility='visible';
-  document.getElementById('eclat').style.visibility='visible';
+  document.getElementById('animation2').style.visibility='visible';
+  /* document.getElementById('eclat').style.visibility='visible'; */
 
 }
 

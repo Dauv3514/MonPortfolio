@@ -130,7 +130,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: black;
+            background: #0a192f;
             transition: top 1s ease; 
             display: none;
 
@@ -169,7 +169,15 @@
             transition: background-color 0.2s;
 
             &:hover {
-                background-color: var(--color-gris-fonce);
+
+                background-color: var(--color-vert);
+
+                & .filter-blue {
+
+                    filter: invert(88%) sepia(110%) saturate(2625%) hue-rotate(190deg) brightness(94%) contrast(98%);
+        
+                }
+
             }
             
             &:active {
@@ -183,7 +191,7 @@
 
             }
     
-        }    
+        } 
 
         &__ouvrir {
 

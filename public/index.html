@@ -27,7 +27,7 @@
                     <a class="navbar__liens" href="#competences"> Compétences </a>
                     <a class="navbar__liens" href="#apropos"> À propos </a>
                     <a class="navbar__liens" href="#contact"> Contact </a>
-                    <button class="navbar__ferme" id="ferme"><img src="./img/ferme-menu.svg"></button>
+                    <button class="navbar__ferme" id="ferme"><img class="filter-blue" src="./img/ferme-menu.svg"></button>
                 </section>
         </nav>
     </header>
@@ -36,10 +36,12 @@
 
         <div class="presentation" id="presentation">
             <h1 class="presentation__nom"> Valentin Dauvier </h1>
-            <h1 class="presentation__metier"> Développeur Front-End </h1>
-            <h2 class="presentation__specialite"> 
+            <div class="presentation__secondaire">
+                <h1 class="presentation__metier"> Développeur Front-End </h1>
+                <h2 class="presentation__specialite"> 
                 Expert <span > Vue JS </span> <span class="point"> . </span>
-            </h2>
+                </h2>
+            </div>
             <p class="presentation__description"> 
                 J’aime dompter les langages pour en faire un savoureux mélange et rendre l’interface visuelle la plus attrayante possible. 
             </p>
@@ -49,7 +51,7 @@
         </div>
 
         <div class="animation">
-            <div id="animation-pokemon">
+            <div class="animation__pokemon" id="animation-pokemon">
                 <img class="animation__vuejs" alt="logo_vuejs" id="vuejs"src="./img/vuejs-anim.svg">
                 <img class="animation__css" alt="logo_css" id="css" src="./img/css-anim.svg">
                 <img class="animation__javascript" alt="logo_javascript" id="javascript" src="./img/javascript-anim.svg">
@@ -62,8 +64,10 @@
                 <p class="animation__opacity" id="opacity"> { opacity: 0.5; } </p>
                 <p class="animation__position" id="position"> { position: relative; } </p>
             </div>
-            <div class="animation__valentinpc" id="valentinpc">
-                <div class="animation__blob"></div>
+            <div class="animation__secondaire" id="animation2">
+                <div class="animation__blob">
+                    <div class="animation__valentinpc"></div>        
+                </div>
                 <div class="animation__description">
                     <div class="animation__mot1">
                         <span class="animation__lettre">    T </span>
@@ -89,10 +93,9 @@
                         <span class="animation__lettre2">   E </span> 
                     </div>
                 </div>
-                
             </div>
-        </div>
 
+        </div>
     </section>
 
     <section id="projets" class="projets">

@@ -4,6 +4,7 @@
   --color-noir: #000000;
   --color-rouge: #D12F1B;
   --color-bleu: #02628C;
+  --couleur-bleu-fonce: #0a192f;
   --color-violet: #AD3EA4;
   --color-gris-fonce: #131313;
   --color-gris-clair: #C4C4C4;
@@ -99,7 +100,7 @@ a {
 
 html {
   font-size: 62.5%;
-  background-color: var(--color-noir);
+  background-color: var(--couleur-bleu-fonce);
   color: var(--color-blanc);
   scroll-behavior: smooth;
 }
@@ -215,7 +216,7 @@ h1, h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: black;
+    background: #0a192f;
     transition: top 1s ease;
     display: none;
   }
@@ -249,7 +250,10 @@ h1, h2 {
     transition: background-color 0.2s;
   }
   .navbar__ferme:hover {
-    background-color: var(--color-gris-fonce);
+    background-color: var(--color-vert);
+  }
+  .navbar__ferme:hover .filter-blue {
+    filter: invert(88%) sepia(110%) saturate(2625%) hue-rotate(190deg) brightness(94%) contrast(98%);
   }
   .navbar__ferme:active {
     transform: scale(0.98);
@@ -275,13 +279,16 @@ h1, h2 {
 
 .accueil {
   padding-top: 6rem;
-  padding-left: 28rem;
+  padding-left: 6rem;
   display: flex;
-  padding-right: 28rem;
-  height: calc(100vh - 107px);
+  padding-right: 6rem;
+  height: calc(100vh - 10.7rem);
 }
 .accueil .presentation, .accueil .animation {
   width: 50%;
+}
+.accueil .presentation {
+  padding-left: 20rem;
 }
 .accueil .presentation__nom {
   padding-bottom: 5rem;
@@ -304,7 +311,8 @@ h1, h2 {
 .accueil .presentation__description {
   margin-bottom: 7rem;
   line-height: 3.1rem;
-  font-size: var(--font-size-carte);
+  font-size: 2rem;
+  padding-right: 6rem;
 }
 .accueil .presentation__contact {
   padding: 2rem 3rem;
@@ -324,18 +332,20 @@ h1, h2 {
     box-shadow: 0 0 0 0 #54EBD7;
   }
 }
-.accueil .animation {
-  position: relative;
+.accueil .animation__pokemon {
+  position: absolute;
+  bottom: 0rem;
 }
 .accueil .animation__eclat {
-  position: absolute;
-  top: -10rem;
+  position: relative;
+  top: 35rem;
   left: 9rem;
+  display: none;
 }
 .accueil .animation__valentin {
   width: 45.8rem;
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  bottom: 0rem;
   left: 0;
 }
 .accueil .animation__pokeball {
@@ -345,7 +355,7 @@ h1, h2 {
 }
 .accueil .animation__html {
   position: absolute;
-  top: 20rem;
+  top: -18rem;
   left: 60rem;
   animation: fallhtml 26s linear;
 }
@@ -356,7 +366,7 @@ h1, h2 {
 }
 .accueil .animation__css {
   position: absolute;
-  top: 4rem;
+  top: -34rem;
   left: 58rem;
   animation: fallcss 20s linear;
 }
@@ -367,7 +377,7 @@ h1, h2 {
 }
 .accueil .animation__vuejs {
   position: absolute;
-  top: 4rem;
+  top: -34rem;
   left: 35rem;
   animation: fallvuejs 20s linear;
 }
@@ -378,7 +388,7 @@ h1, h2 {
 }
 .accueil .animation__javascript {
   position: absolute;
-  top: 20rem;
+  top: -18rem;
   left: 42rem;
   animation: falljavascript 20s linear;
 }
@@ -389,7 +399,7 @@ h1, h2 {
 }
 .accueil .animation__vscode {
   position: absolute;
-  top: 10rem;
+  top: -28rem;
   left: 22rem;
   animation: fallvscode 20s linear;
 }
@@ -405,9 +415,10 @@ h1, h2 {
 }
 .accueil .animation__rotate {
   position: absolute;
-  top: 15rem;
+  top: -23rem;
   left: 42rem;
   animation: fallrotate 20s linear;
+  width: 100%;
 }
 @keyframes fallrotate {
   60% {
@@ -416,7 +427,7 @@ h1, h2 {
 }
 .accueil .animation__opacity {
   position: absolute;
-  top: 20rem;
+  top: -18rem;
   left: 28rem;
   animation: fallopacity 20s linear;
 }
@@ -427,33 +438,43 @@ h1, h2 {
 }
 .accueil .animation__position {
   position: absolute;
-  top: 30rem;
+  top: -8rem;
   left: 48rem;
   animation: fallposition 20s linear;
+  width: 100%;
 }
 @keyframes fallposition {
   60% {
     transform: translateY(4rem) translateX(-8rem);
   }
 }
-.accueil .animation__valentinpc {
+.accueil .animation__secondaire {
   visibility: hidden;
+  display: flex;
+  justify-content: center;
+}
+.accueil .animation__valentinpc {
   position: relative;
+  left: 4rem;
 }
 .accueil .animation__valentinpc:after {
-  content: url("../img/valentinpc.svg");
+  content: "";
   position: absolute;
-  left: 24rem;
-  top: 2rem;
-  z-index: 14;
+  /* left: 3rem;
+  top: 2rem; */
+  z-index: 8;
+  background: url("../img/valentinpc.svg") no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  height: 44rem;
+  width: 45.3rem;
 }
 .accueil .animation__description {
   font-family: var(--font-family-kreon);
   font-size: var(--font-size-grand);
   color: var(--color-vert);
   position: absolute;
-  left: 30rem;
-  top: 60rem;
+  top: 80rem;
 }
 .accueil .animation__blob {
   background-image: linear-gradient(120deg, #34e0f0 0%, #54EBD7 100%);
@@ -464,8 +485,6 @@ h1, h2 {
   transform-style: preserve-3d;
   outline: 0.1rem solid transparent;
   will-change: border-radius;
-  position: absolute;
-  right: -8rem;
 }
 .accueil .animation__blob:before, .accueil .animation__blob:after {
   content: "";
@@ -601,6 +620,125 @@ h1, h2 {
   animation-delay: 2s;
 }
 
+@media (max-width: 1780px) {
+  .accueil {
+    padding-right: 6rem;
+  }
+  .accueil .presentation {
+    padding-left: 10rem;
+  }
+}
+@media (max-width: 1660px) {
+  .accueil {
+    padding-right: 9rem;
+  }
+  .accueil .presentation {
+    padding-left: 3rem;
+  }
+}
+@media (max-width: 1580px) {
+  .accueil .presentation__nom, .accueil .presentation__metier {
+    font-size: 5rem;
+  }
+  .accueil .presentation__specialite {
+    font-size: 4rem;
+  }
+  .accueil .presentation__description {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 1450px) {
+  .accueil {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    height: 100vh;
+  }
+  .accueil .presentation {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0rem;
+  }
+  .accueil .presentation__nom {
+    padding-bottom: 0rem;
+    border-bottom: 0rem;
+    text-align: center;
+    width: 100%;
+  }
+  .accueil .presentation__secondaire {
+    display: flex;
+    justify-content: center;
+  }
+  .accueil .presentation__metier {
+    padding-top: 1rem;
+  }
+  .accueil .presentation__specialite {
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+    padding-left: 3rem;
+  }
+  .accueil .presentation__description {
+    margin-bottom: 2rem;
+    position: absolute;
+    padding-right: 16rem;
+    padding-left: 16rem;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .accueil .presentation__contact {
+    display: none;
+  }
+  .accueil .animation {
+    position: absolute;
+    top: 24rem;
+  }
+  .accueil .animation__pokemon {
+    position: absolute;
+    top: 29rem;
+  }
+  .accueil .animation__pokeball {
+    bottom: -5rem;
+  }
+  .accueil .animation__blob {
+    width: 45rem;
+    height: 43.2rem;
+    position: absolute;
+    top: 10rem;
+  }
+  .accueil .animation__valentinpc {
+    position: absolute;
+    left: 4rem;
+    height: 100%;
+    width: 100%;
+  }
+  .accueil .animation__valentinpc:after {
+    height: 80%;
+    width: 80%;
+  }
+  .accueil .animation__description {
+    position: absolute;
+    top: 58rem;
+  }
+}
+@media (max-width: 950px) {
+  .accueil .presentation__nom, .accueil .presentation__metier {
+    font-size: 4rem;
+  }
+  .accueil .presentation__specialite {
+    font-size: 3rem;
+  }
+  .accueil .presentation__description {
+    font-size: 1.4rem;
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
+  .accueil .animation__lettre, .accueil .animation__lettre2 {
+    font-size: var(--font-size-moyen);
+  }
+}
 .projets {
   padding: var(--padding-sections);
   display: flex;
@@ -661,7 +799,7 @@ h1, h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: black;
+  background: #0a192f;
   color: #FFF;
   display: flex;
   justify-content: center;
