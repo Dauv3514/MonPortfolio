@@ -238,7 +238,7 @@ h1, h2 {
   .navbar__ferme {
     display: block;
     visibility: visible;
-    padding: 1.5rem;
+    padding: 1.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -268,15 +268,30 @@ h1, h2 {
   }
 }
 @media (max-width: 650px) {
+  .navbar {
+    padding: 3rem 4rem;
+  }
+  .navbar__cv {
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+  }
   .navbar__bloc-liens a {
     font-size: 2rem;
   }
   .navbar__ferme {
     margin-right: 0rem;
     margin-top: 0rem;
+    padding: 1rem;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+  }
+  .navbar__ferme img {
+    height: 2.2rem;
+    width: 2.2rem;
   }
 }
-
 .accueil {
   padding-top: 6rem;
   padding-left: 6rem;
@@ -651,7 +666,10 @@ h1, h2 {
   .accueil {
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     height: 100vh;
   }
   .accueil .presentation {
@@ -695,18 +713,25 @@ h1, h2 {
     position: absolute;
     top: 24rem;
   }
+  .accueil .animation__valentin {
+    width: 36.64rem;
+    left: 9rem;
+  }
   .accueil .animation__pokemon {
     position: absolute;
-    top: 29rem;
+    top: 36.7rem;
   }
   .accueil .animation__pokeball {
-    bottom: -5rem;
+    left: 36rem;
+    bottom: -4rem;
+    height: 10.4rem;
+    width: 9.92rem;
   }
   .accueil .animation__blob {
     width: 45rem;
     height: 43.2rem;
     position: absolute;
-    top: 10rem;
+    top: 12rem;
   }
   .accueil .animation__valentinpc {
     position: absolute;
@@ -720,7 +745,14 @@ h1, h2 {
   }
   .accueil .animation__description {
     position: absolute;
-    top: 58rem;
+    top: 59rem;
+    font-size: 2.8rem;
+  }
+  .accueil .animation__css {
+    top: -30rem;
+  }
+  .accueil .animation__vuejs {
+    top: -30rem;
   }
 }
 @media (max-width: 950px) {
@@ -735,8 +767,213 @@ h1, h2 {
     padding-right: 10rem;
     padding-left: 10rem;
   }
+  .accueil .animation__valentin {
+    left: 0rem;
+  }
   .accueil .animation__lettre, .accueil .animation__lettre2 {
     font-size: var(--font-size-moyen);
+  }
+  .accueil .animation__pokeball {
+    left: 28rem;
+  }
+  .accueil .animation__blob {
+    position: absolute;
+    top: 10rem;
+  }
+  .accueil .animation__css {
+    left: 50rem;
+  }
+  .accueil .animation__vuejs {
+    left: 30rem;
+  }
+  .accueil .animation__html {
+    left: 50rem;
+  }
+  .accueil .animation__javascript {
+    left: 30rem;
+  }
+  .accueil .animation__vscode {
+    left: 10rem;
+  }
+  .accueil .animation__rotate {
+    left: 30rem;
+  }
+  .accueil .animation__opacity {
+    left: 20rem;
+  }
+  .accueil .animation__position {
+    left: 40rem;
+  }
+}
+@media (max-width: 760px) {
+  .accueil .presentation__nom, .accueil .presentation__metier {
+    font-size: 4rem;
+  }
+  .accueil .presentation__secondaire {
+    flex-direction: column;
+    align-items: center;
+  }
+  .accueil .presentation__specialite {
+    padding-left: 0rem;
+  }
+  .accueil .presentation__description {
+    font-size: 1.3rem;
+    /* position: absolute;
+    top: 20rem; */
+    padding-top: 2rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
+  }
+  .accueil .animation__blob {
+    position: absolute;
+    top: 17rem;
+    width: 40rem;
+    height: 38.4rem;
+  }
+}
+@media (max-width: 650px) {
+  .accueil .animation__valentin {
+    left: -15rem;
+  }
+  .accueil .animation__pokeball {
+    left: 13rem;
+  }
+  .accueil .animation__css {
+    left: 36rem;
+  }
+  .accueil .animation__vuejs {
+    left: 16rem;
+  }
+  .accueil .animation__html {
+    left: 36rem;
+  }
+  .accueil .animation__javascript {
+    left: 16rem;
+  }
+  .accueil .animation__vscode {
+    left: -4rem;
+  }
+  .accueil .animation__rotate {
+    left: 16rem;
+  }
+  .accueil .animation__opacity {
+    left: 6rem;
+  }
+  .accueil .animation__position {
+    left: 26rem;
+  }
+}
+@media (max-width: 530px) {
+  .accueil .presentation__nom, .accueil .presentation__metier {
+    font-size: 3.2rem;
+  }
+  .accueil .presentation__specialite {
+    font-size: 2.5rem;
+  }
+  .accueil .presentation__description {
+    font-size: 1.1rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
+    padding-top: 4rem;
+  }
+  .accueil .animation__blob {
+    position: absolute;
+    top: 20rem;
+    width: 32.7rem;
+    height: 31.4rem;
+  }
+  .accueil .animation__lettre, .accueil .animation__lettre2 {
+    font-size: 2rem;
+  }
+  .accueil .animation__description {
+    position: absolute;
+    top: 58rem;
+  }
+}
+@media (max-width: 435px) {
+  .accueil {
+    padding-top: 3rem;
+  }
+  .accueil .animation__css {
+    height: 5rem;
+    width: 5rem;
+    top: -20rem;
+    left: 30rem;
+  }
+  .accueil .animation__vuejs {
+    height: 5rem;
+    width: 5rem;
+    top: -20rem;
+    left: 8rem;
+  }
+  .accueil .animation__html {
+    height: 5rem;
+    width: 5rem;
+    top: -3rem;
+    left: 30rem;
+  }
+  .accueil .animation__javascript {
+    height: 5rem;
+    width: 5rem;
+    top: -5rem;
+    left: 10rem;
+  }
+  .accueil .animation__vscode {
+    height: 5rem;
+    width: 5rem;
+    top: -15rem;
+    left: -8rem;
+  }
+  .accueil .animation__rotate {
+    top: -10rem;
+    left: 10rem;
+  }
+  .accueil .animation__opacity {
+    top: -6rem;
+    left: -2rem;
+  }
+  .accueil .animation__position {
+    top: 4rem;
+    left: 14rem;
+  }
+  .accueil .animation__rotate, .accueil .animation__opacity, .accueil .animation__position {
+    font-size: 1rem;
+  }
+  .accueil .presentation__nom, .accueil .presentation__metier {
+    font-size: 2.7rem;
+  }
+  .accueil .presentation__specialite {
+    font-size: 2.2rem;
+  }
+  .accueil .presentation__description {
+    font-size: 1rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    padding-top: 4rem;
+  }
+  .accueil .animation__valentin {
+    width: 27.48rem;
+    left: -14rem;
+    bottom: -10rem;
+  }
+  .accueil .animation__pokeball {
+    height: 7.8rem;
+    width: 7.44rem;
+    left: 7rem;
+    bottom: -13rem;
+  }
+  .accueil .animation__blob {
+    position: absolute;
+    top: 22rem;
+    width: 27.6rem;
+    height: 26.5rem;
+  }
+  .accueil .animation__description {
+    position: absolute;
+    top: 55rem;
+  }
+  .accueil .animation__lettre, .accueil .animation__lettre2 {
+    font-size: 1.7rem;
   }
 }
 .projets {
@@ -838,6 +1075,14 @@ h1, h2 {
     margin-top: 8rem;
   }
 }
+@media (max-width: 1450px) {
+  .projets {
+    padding-top: 0em;
+    padding-bottom: 0rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
 @media (max-width: 1000px) {
   .projets__bloc {
     width: 43rem;
@@ -912,8 +1157,8 @@ h1, h2 {
   margin-top: 14rem;
   display: flex;
   flex-direction: column;
-  background-color: var(--color-gris-fonce);
-  outline: 10px double var(--color-gris-fonce);
+  background-color: var(--color-bleu-fonce);
+  border: 0.3rem solid var(--color-vert);
   border-radius: 2rem;
 }
 .apropos__bloc p {
@@ -1216,7 +1461,7 @@ h1, h2 {
   padding-bottom: 1rem;
 }
 .competences-liste > article p {
-  font-size: var(--font-size-petit);
+  font-size: 1.5rem;
   font-family: var(--font-family-roboto-mono);
 }
 .competences-liste > article:nth-child(n+2) {
@@ -1239,6 +1484,21 @@ h1, h2 {
   }
   .competences__changer {
     margin-bottom: 0rem;
+    padding-top: 0rem;
+    padding-left: 0.65rem;
+    padding-right: 0rem;
+    padding-bottom: 0rem;
+    font-size: 2rem;
+  }
+  .competences__changer button {
+    width: 13rem;
+    padding: 2.3rem 1.6rem;
+  }
+  .competences__changer::before {
+    width: 12rem;
+  }
+  .competences__changer.droite::before {
+    transform: translateX(13.4rem);
   }
   .competences-liste > article:nth-child(n+2) {
     margin-left: 0rem;
@@ -1264,17 +1524,7 @@ h1, h2 {
     width: 11.3rem;
   }
   .competences-liste > article p {
-    font-size: 1.4rem;
-  }
-  .competences__changer {
-    padding: 0.6rem;
-  }
-  .competences__changer button {
-    width: 17rem;
-  }
-  .competences::before {
-    width: 16.8rem;
-    height: calc(100% - 1.4rem);
+    font-size: 1.3rem;
   }
 }
 @media screen and (max-width: 570px) {
@@ -1306,7 +1556,7 @@ h1, h2 {
     } */
   }
   .competences-liste > article p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .competences-liste > article:nth-child(even) {
     margin-left: 8rem;

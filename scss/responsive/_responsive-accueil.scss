@@ -1,0 +1,641 @@
+@media (max-width: 1780px) {
+
+    .accueil {  
+
+        padding-right: 6rem;
+
+    .presentation { 
+
+        padding-left: 10rem;
+
+    }}
+
+}
+
+@media (max-width: 1660px) {
+
+    .accueil {  
+
+        padding-right: 9rem;
+
+    .presentation { 
+
+        padding-left: 3rem;
+
+    }}
+
+}
+
+@media (max-width: 1580px) {
+
+    .accueil {  
+
+
+    .presentation { 
+
+        &__nom, &__metier {
+
+            font-size: 5rem;
+    
+        } 
+
+        &__specialite {
+
+            font-size: 4rem;
+    
+        } 
+
+        &__description {
+
+            font-size: 1.6rem;
+
+        }
+    }}
+
+}
+
+@media (max-width: 1450px) {
+
+    .accueil {
+
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 0rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        height: 100vh; 
+
+        .presentation { 
+
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0 ;
+            padding-left: 0rem;
+
+            &__nom {
+
+                padding-bottom: 0rem;
+                border-bottom: 0rem;
+                text-align: center;
+                width: 100%;
+
+            }
+
+            &__secondaire {
+
+                display: flex;
+                justify-content: center;
+    
+            }
+
+            &__metier {
+
+                padding-top: 1rem;
+    
+            }
+    
+            &__specialite {
+
+                padding-bottom: 0rem;
+                padding-top: 0rem;
+                padding-left: 3rem;
+
+            }
+
+            &__description {
+
+                margin-bottom: 2rem;
+                position: absolute;
+                padding-right: 16rem;
+                padding-left: 16rem;
+                padding-top: 2rem;
+                @include flex-justify;
+                width: 100%;
+
+            }
+
+            &__contact {
+
+                display: none;
+
+            }
+
+        }
+
+        .animation { 
+
+            position: absolute;
+            top: 24rem;
+
+            &__valentin {
+
+                width: 36.64rem;
+                left: 9rem;
+    
+            }
+
+            &__pokemon {
+
+                position: absolute;
+                top: 36.7rem;
+
+            }
+
+            &__pokeball {
+
+                left: 36rem;
+                bottom: -4rem;
+                height: 10.4rem;
+                width: 9.92rem; 
+    
+            }
+
+            &__blob {
+
+                width: 45rem; height: 43.2rem;
+                position: absolute;
+                top: 12rem;
+            
+            }
+
+            &__valentinpc {
+
+                position: absolute;
+                left: 4rem;
+                height: 100%;
+                width: 100%; 
+
+                &:after {
+
+                    height: 80%;
+                    width: 80%; 
+
+                }
+
+            }
+
+            &__description {
+
+                position: absolute;
+                top: 59rem;
+                font-size: 2.8rem;
+
+            }
+
+            &__css {
+
+                top: -30rem;
+    
+            }
+    
+            &__vuejs {
+
+                top: -30rem;
+    
+            }
+
+        }
+
+    }
+
+}
+
+@media (max-width: 950px) {
+
+    .accueil {
+
+        .presentation { 
+
+            &__nom, &__metier {
+
+                font-size: 4rem;
+        
+            } 
+    
+            &__specialite {
+    
+                font-size: 3rem;
+        
+            } 
+    
+            &__description {
+    
+                font-size: 1.4rem;
+                padding-right: 10rem;
+                padding-left: 10rem;
+    
+            }
+
+        }
+
+        .animation {
+
+    
+            &__valentin {
+    
+                left: 0rem;
+        
+            }
+
+            &__lettre, &__lettre2 {
+
+                font-size: var(--font-size-moyen);
+
+            }
+
+            &__pokeball {
+
+                left: 28rem; 
+    
+            }
+
+            &__blob {
+
+                position: absolute;
+                top: 10rem;
+            
+            } 
+
+            &__css {
+
+                left: 50rem;
+    
+            }
+    
+            &__vuejs {
+
+                left: 30rem;
+    
+            }
+
+            &__html {
+
+                left: 50rem;
+    
+            }
+    
+            &__javascript {
+
+                left: 30rem;
+    
+            }
+
+            &__vscode {
+
+                left: 10rem;
+    
+            }
+
+            &__rotate {
+
+                left: 30rem;
+
+            }
+            
+            &__opacity {
+
+                left: 20rem;
+
+            } 
+            
+            &__position {
+
+                left: 40rem;
+
+            }
+            
+        }
+
+    }
+
+}
+
+@media (max-width: 760px) {
+
+    .accueil {
+        
+        .presentation { 
+
+            &__nom, &__metier {
+
+                font-size: 4rem;
+        
+            } 
+
+            &__secondaire {
+
+                flex-direction: column;
+                align-items: center;
+    
+            }
+    
+            &__specialite {
+    
+                padding-left: 0rem;
+        
+            } 
+    
+            &__description {
+    
+                font-size: 1.3rem;
+                /* position: absolute;
+                top: 20rem; */
+                padding-top: 2rem;
+                padding-right: 8rem;
+                padding-left: 8rem;
+    
+            }
+
+        }
+
+        .animation { 
+
+            &__blob {
+
+                position: absolute;
+                top: 17rem;
+                width: 40rem; height: 38.4rem;
+        
+            }
+
+        }
+
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .accueil {
+
+        .animation {
+
+            &__valentin {
+    
+                left: -15rem;
+        
+            }
+
+            &__pokeball {
+
+                left: 13rem; 
+    
+            }
+
+            &__css {
+
+                left: 36rem;
+    
+            }
+    
+            &__vuejs {
+
+                left: 16rem;
+    
+            }
+
+            &__html {
+
+                left: 36rem;
+    
+            }
+    
+            &__javascript {
+
+                left: 16rem;
+    
+            }
+
+            &__vscode {
+
+                left: -4rem;
+    
+            }
+
+            &__rotate {
+
+                left: 16rem;
+
+            }
+            
+            &__opacity {
+
+                left: 6rem;
+
+            } 
+            
+            &__position {
+
+                left: 26rem;
+
+            }
+            
+        }
+
+    }
+
+}
+
+@media (max-width: 530px) {
+
+    .accueil {
+        
+        .presentation { 
+
+            &__nom, &__metier {
+
+                font-size: 3.2rem;
+        
+            } 
+    
+            &__specialite {
+    
+                font-size: 2.5rem;
+        
+            } 
+    
+            &__description {
+    
+                font-size: 1.1rem;
+                padding-right: 6rem;
+                padding-left: 6rem;
+                padding-top: 4rem;
+    
+            }
+
+        }
+
+        .animation { 
+
+            &__blob {
+
+                position: absolute;
+                top: 20rem;
+                width: 32.7rem; height: 31.4rem;
+        
+            }
+
+            &__lettre, &__lettre2 {
+
+                font-size: 2rem;
+
+            }
+
+            &__description {
+
+                position: absolute;
+                top: 58rem;
+
+            }
+
+        }
+
+    }
+}
+
+@media (max-width: 435px) {
+
+    .accueil {
+
+        padding-top: 3rem;
+
+        .animation {  
+
+            &__css {
+
+                height: 5rem;
+                width: 5rem;
+                top: -20rem;
+                left: 30rem;
+
+            }
+
+            &__vuejs {
+
+                height: 5rem;
+                width: 5rem;
+                top: -20rem;
+                left: 8rem;
+
+            }
+
+            &__html {
+
+                height: 5rem;
+                width: 5rem;
+                top: -3rem;
+                left: 30rem;
+
+            }
+
+            &__javascript {
+
+                height: 5rem;
+                width: 5rem;
+                top: -5rem;
+                left: 10rem;
+
+            }
+
+            &__vscode {
+
+                height: 5rem;
+                width: 5rem;
+                top: -15rem;
+                left: -8rem;
+
+            }
+
+            &__rotate {
+                top: -10rem;
+                left: 10rem;
+            }
+
+            &__opacity {
+                top: -6rem;
+                left: -2rem;
+            }
+
+            &__position {
+                top: 4rem;
+                left: 14rem;         
+            }
+
+            &__rotate, &__opacity , &__position {
+
+                font-size: 1rem;
+
+            }
+
+        }
+        
+        .presentation { 
+
+            &__nom, &__metier {
+
+                font-size: 2.7rem;
+        
+            } 
+    
+            &__specialite {
+    
+                font-size: 2.2rem;
+        
+            } 
+    
+            &__description {
+    
+                font-size: 1rem;
+                padding-right: 4rem;
+                padding-left: 4rem;
+                padding-top: 4rem;
+    
+            }
+
+        }
+
+        .animation { 
+    
+            &__valentin {
+    
+                width: 27.48rem;
+                left: -14rem;
+                bottom: -10rem;
+        
+            }
+    
+            &__pokeball {
+
+                height: 7.8rem;
+                width: 7.44rem; 
+                left: 7rem;
+                bottom: -13rem;
+        
+            }
+
+            &__blob {
+
+                position: absolute;
+                top: 22rem;
+                width: 27.6rem; height: 26.5rem;
+        
+            }
+
+            &__description {
+    
+                position: absolute;
+                top: 55rem;
+    
+            }
+
+            &__lettre, &__lettre2 {
+
+                font-size: 1.7rem;
+
+            }
+
+        }
+
+    }
+}

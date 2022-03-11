@@ -144,6 +144,15 @@
 
     }
 
+    @media (max-width: 1450px) {
+
+        padding-top: 0em;
+        padding-bottom: 0rem;
+        padding-left: 6rem;
+        padding-right: 6rem;
+
+    }
+
     @media (max-width: 1000px) {
 
         &__bloc {

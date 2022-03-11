@@ -1,7 +1,7 @@
 <svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_174_203)" filter="url(#filter0_d_174_203)">
 <g filter="url(#filter1_f_174_203)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M422.304 221.594C453.868 219.489 489.774 221.953 510.253 246.064C530.055 269.377 513.081 303.79 517.789 334.013C524.348 376.114 566.699 419.206 542.713 454.422C518.91 489.37 464.544 476.134 422.304 474.208C382.84 472.408 342.967 468.942 312.398 443.919C278.646 416.29 243.464 376.968 251.04 334.013C258.366 292.475 310.091 280.208 345.353 257.062C369.899 240.95 393.008 223.548 422.304 221.594Z" fill="#54EBD7"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M378.717 357.099C383.978 356.748 389.962 357.159 393.376 361.177C396.676 365.063 393.847 370.798 394.632 375.836C395.725 382.852 402.783 390.034 398.785 395.904C394.818 401.728 385.757 399.522 378.717 399.201C372.14 398.901 365.494 398.324 360.4 394.153C354.774 389.548 348.911 382.995 350.173 375.836C351.394 368.912 360.015 366.868 365.892 363.01C369.983 360.325 373.835 357.425 378.717 357.099Z" fill="#54EBD7"/>
 </g>
 </g>
 <defs>
@@ -15,7 +15,7 @@
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_174_203"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_174_203" result="shape"/>
 </filter>
-<filter id="filter1_f_174_203" x="-104" y="-133" width="1008" height="965.258" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter1_f_174_203" x="-4" y="3" width="758" height="750.876" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feGaussianBlur stdDeviation="177" result="effect1_foregroundBlur_174_203"/>
