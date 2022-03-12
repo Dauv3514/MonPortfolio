@@ -93,17 +93,17 @@
 
         &__valentin {
 
-            width: 45.8rem;
+            width: 39rem;
             position: relative;
-            bottom: 0rem;
-            left: 0;
+            bottom: -1rem;
+            left: 7rem;
 
         }
 
         &__pokeball {
 
             position: absolute;
-            bottom: 34.4rem;
+            bottom: 35.4rem;
             left: 35.5rem;
 
         }
@@ -119,7 +119,7 @@
 
         @keyframes fallhtml {
             60% {
-                transform: /* rotate(360deg) */ translateX(-28rem) translateY(14rem);
+                transform: translateX(-28rem) translateY(14rem);
             }
         }
 

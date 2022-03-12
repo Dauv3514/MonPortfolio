@@ -95,7 +95,7 @@
 
     }
 
-    &__overlay:hover {
+    &__overlay:hover, &__overlay:active {
 
         opacity: 0.8;
         cursor: pointer;

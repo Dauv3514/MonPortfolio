@@ -107,6 +107,25 @@
 
     }
 
+    @media (max-width: 1580px) {
+
+        &__bloc-liens {
+
+            font-size: 1.4rem;
+
+        }
+
+    }
+
+    @media (max-width: 1450px) {
+
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        padding-left: 8rem;
+        padding-right: 0rem;
+
+    }
+
     @media (max-width: 950px) {
 
         &__liens {
@@ -239,11 +258,6 @@
 
     }
 
-    @media (max-width: 430px) {
-
-
-
-    }
 
 }
 

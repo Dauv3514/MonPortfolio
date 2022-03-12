@@ -202,6 +202,19 @@ h1, h2 {
   height: 4rem;
   width: 4rem;
 }
+@media (max-width: 1580px) {
+  .navbar__bloc-liens {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 1450px) {
+  .navbar {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 8rem;
+    padding-right: 0rem;
+  }
+}
 @media (max-width: 950px) {
   .navbar__liens:before, .navbar__liens:after {
     display: none;
@@ -292,6 +305,7 @@ h1, h2 {
     width: 2.2rem;
   }
 }
+
 .accueil {
   padding-top: 6rem;
   padding-left: 6rem;
@@ -358,14 +372,14 @@ h1, h2 {
   display: none;
 }
 .accueil .animation__valentin {
-  width: 45.8rem;
+  width: 39rem;
   position: relative;
-  bottom: 0rem;
-  left: 0;
+  bottom: -1rem;
+  left: 7rem;
 }
 .accueil .animation__pokeball {
   position: absolute;
-  bottom: 34.4rem;
+  bottom: 35.4rem;
   left: 35.5rem;
 }
 .accueil .animation__html {
@@ -714,8 +728,9 @@ h1, h2 {
     top: 24rem;
   }
   .accueil .animation__valentin {
-    width: 36.64rem;
-    left: 9rem;
+    width: 34.64rem;
+    left: 10rem;
+    bottom: 5rem;
   }
   .accueil .animation__pokemon {
     position: absolute;
@@ -723,7 +738,7 @@ h1, h2 {
   }
   .accueil .animation__pokeball {
     left: 36rem;
-    bottom: -4rem;
+    bottom: -0.5rem;
     height: 10.4rem;
     width: 9.92rem;
   }
@@ -749,10 +764,30 @@ h1, h2 {
     font-size: 2.8rem;
   }
   .accueil .animation__css {
-    top: -30rem;
+    top: -34rem;
   }
   .accueil .animation__vuejs {
-    top: -30rem;
+    top: -32rem;
+  }
+  .accueil .animation__html {
+    top: -20rem;
+  }
+  .accueil .animation__javascript {
+    top: -20rem;
+    left: 38rem;
+  }
+  .accueil .animation__vscode {
+    top: -28rem;
+  }
+  .accueil .animation__rotate {
+    top: -26rem;
+  }
+  .accueil .animation__opacity {
+    top: -20rem;
+    width: 100%;
+  }
+  .accueil .animation__position {
+    top: -10rem;
   }
 }
 @media (max-width: 950px) {
@@ -774,26 +809,26 @@ h1, h2 {
     font-size: var(--font-size-moyen);
   }
   .accueil .animation__pokeball {
-    left: 28rem;
+    left: 26rem;
   }
   .accueil .animation__blob {
     position: absolute;
     top: 10rem;
   }
   .accueil .animation__css {
-    left: 50rem;
+    left: 48rem;
   }
   .accueil .animation__vuejs {
-    left: 30rem;
+    left: 27rem;
   }
   .accueil .animation__html {
-    left: 50rem;
+    left: 48rem;
   }
   .accueil .animation__javascript {
     left: 30rem;
   }
   .accueil .animation__vscode {
-    left: 10rem;
+    left: 12rem;
   }
   .accueil .animation__rotate {
     left: 30rem;
@@ -802,7 +837,7 @@ h1, h2 {
     left: 20rem;
   }
   .accueil .animation__position {
-    left: 40rem;
+    left: 36rem;
   }
 }
 @media (max-width: 760px) {
@@ -818,11 +853,19 @@ h1, h2 {
   }
   .accueil .presentation__description {
     font-size: 1.3rem;
-    /* position: absolute;
-    top: 20rem; */
     padding-top: 2rem;
     padding-right: 8rem;
     padding-left: 8rem;
+  }
+  .accueil .animation__valentin {
+    width: 27.48rem;
+    bottom: -2rem;
+  }
+  .accueil .animation__pokeball {
+    height: 7.8rem;
+    width: 7.44rem;
+    bottom: -6.5rem;
+    left: 21rem;
   }
   .accueil .animation__blob {
     position: absolute;
@@ -830,19 +873,61 @@ h1, h2 {
     width: 40rem;
     height: 38.4rem;
   }
+  .accueil .animation__css {
+    left: 43rem;
+    top: -25rem;
+    height: 5rem;
+    width: 5rem;
+  }
+  .accueil .animation__vuejs {
+    top: -27rem;
+    left: 21rem;
+    height: 5rem;
+    width: 5rem;
+  }
+  .accueil .animation__html {
+    left: 44rem;
+    top: -12rem;
+    height: 5rem;
+    width: 5rem;
+  }
+  .accueil .animation__javascript {
+    top: -12rem;
+    left: 24rem;
+    height: 5rem;
+    width: 5rem;
+  }
+  .accueil .animation__vscode {
+    top: -21rem;
+    left: 7rem;
+    height: 5rem;
+    width: 5rem;
+  }
+  .accueil .animation__rotate {
+    top: -18rem;
+    left: 25rem;
+  }
+  .accueil .animation__opacity {
+    top: -12rem;
+    left: 14rem;
+  }
+  .accueil .animation__position {
+    top: -3rem;
+    left: 28rem;
+  }
 }
 @media (max-width: 650px) {
   .accueil .animation__valentin {
-    left: -15rem;
+    left: -8rem;
   }
   .accueil .animation__pokeball {
     left: 13rem;
   }
   .accueil .animation__css {
-    left: 36rem;
+    left: 34rem;
   }
   .accueil .animation__vuejs {
-    left: 16rem;
+    left: 14rem;
   }
   .accueil .animation__html {
     left: 36rem;
@@ -860,7 +945,7 @@ h1, h2 {
     left: 6rem;
   }
   .accueil .animation__position {
-    left: 26rem;
+    left: 24rem;
   }
 }
 @media (max-width: 530px) {
@@ -895,32 +980,22 @@ h1, h2 {
     padding-top: 3rem;
   }
   .accueil .animation__css {
-    height: 5rem;
-    width: 5rem;
     top: -20rem;
     left: 30rem;
   }
   .accueil .animation__vuejs {
-    height: 5rem;
-    width: 5rem;
     top: -20rem;
     left: 8rem;
   }
   .accueil .animation__html {
-    height: 5rem;
-    width: 5rem;
     top: -3rem;
     left: 30rem;
   }
   .accueil .animation__javascript {
-    height: 5rem;
-    width: 5rem;
     top: -5rem;
     left: 10rem;
   }
   .accueil .animation__vscode {
-    height: 5rem;
-    width: 5rem;
     top: -15rem;
     left: -8rem;
   }
@@ -952,15 +1027,13 @@ h1, h2 {
     padding-top: 4rem;
   }
   .accueil .animation__valentin {
-    width: 27.48rem;
-    left: -14rem;
+    width: 20.32rem;
+    left: -7rem;
     bottom: -10rem;
   }
   .accueil .animation__pokeball {
-    height: 7.8rem;
-    width: 7.44rem;
-    left: 7rem;
-    bottom: -13rem;
+    left: 7.3rem;
+    bottom: -13.2rem;
   }
   .accueil .animation__blob {
     position: absolute;
@@ -1044,7 +1117,7 @@ h1, h2 {
   flex-direction: column;
   opacity: 0;
 }
-.projets__overlay:hover {
+.projets__overlay:hover, .projets__overlay:active {
   opacity: 0.8;
   cursor: pointer;
 }

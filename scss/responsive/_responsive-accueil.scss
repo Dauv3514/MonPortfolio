@@ -30,28 +30,27 @@
 
     .accueil {  
 
+        .presentation { 
 
-    .presentation { 
+            &__nom, &__metier {
 
-        &__nom, &__metier {
-
-            font-size: 5rem;
+                font-size: 5rem;
     
-        } 
+            } 
 
-        &__specialite {
+            &__specialite {
 
-            font-size: 4rem;
+                font-size: 4rem;
     
-        } 
+            } 
 
-        &__description {
+            &__description {
 
-            font-size: 1.6rem;
+                font-size: 1.6rem;
 
+            }
         }
-    }}
-
+    }
 }
 
 @media (max-width: 1450px) {
@@ -130,8 +129,9 @@
 
             &__valentin {
 
-                width: 36.64rem;
-                left: 9rem;
+                width: 34.64rem;
+                left: 10rem;
+                bottom: 5rem;
     
             }
 
@@ -145,7 +145,7 @@
             &__pokeball {
 
                 left: 36rem;
-                bottom: -4rem;
+                bottom: -0.5rem;
                 height: 10.4rem;
                 width: 9.92rem; 
     
@@ -153,7 +153,8 @@
 
             &__blob {
 
-                width: 45rem; height: 43.2rem;
+                width: 45rem; 
+                height: 43.2rem;
                 position: absolute;
                 top: 12rem;
             
@@ -185,14 +186,52 @@
 
             &__css {
 
-                top: -30rem;
+                top: -34rem;
     
             }
     
             &__vuejs {
 
-                top: -30rem;
+                top: -32rem;
     
+            }
+
+            &__html {
+
+                top: -20rem;
+    
+            }
+    
+            &__javascript {
+
+                top: -20rem;
+                left: 38rem;
+    
+            }
+
+            &__vscode {
+
+                top: -28rem;
+    
+            }
+
+            &__rotate {
+
+                top: -26rem;
+
+            }
+            
+            &__opacity {
+
+                top: -20rem;
+                width: 100%;
+
+            } 
+            
+            &__position {
+
+                top: -10rem;
+
             }
 
         }
@@ -246,7 +285,7 @@
 
             &__pokeball {
 
-                left: 28rem; 
+                left: 26rem; 
     
             }
 
@@ -259,19 +298,19 @@
 
             &__css {
 
-                left: 50rem;
+                left: 48rem;
     
             }
     
             &__vuejs {
 
-                left: 30rem;
+                left: 27rem;
     
             }
 
             &__html {
 
-                left: 50rem;
+                left: 48rem;
     
             }
     
@@ -283,7 +322,7 @@
 
             &__vscode {
 
-                left: 10rem;
+                left: 12rem;
     
             }
 
@@ -301,7 +340,7 @@
             
             &__position {
 
-                left: 40rem;
+                left: 36rem;
 
             }
             
@@ -339,8 +378,6 @@
             &__description {
     
                 font-size: 1.3rem;
-                /* position: absolute;
-                top: 20rem; */
                 padding-top: 2rem;
                 padding-right: 8rem;
                 padding-left: 8rem;
@@ -351,12 +388,94 @@
 
         .animation { 
 
+            &__valentin {
+
+                width: 27.48rem;
+                bottom: -2rem;
+    
+            }
+
+            &__pokeball {
+
+                height: 7.8rem;
+                width: 7.44rem;
+                bottom: -6.5rem;
+                left: 21rem;
+    
+            }
+
             &__blob {
 
                 position: absolute;
                 top: 17rem;
                 width: 40rem; height: 38.4rem;
         
+            }
+
+            &__css {
+
+                left: 43rem;
+                top: -25rem;
+                height: 5rem;
+                width: 5rem;
+
+            }
+
+            &__vuejs {
+
+                top: -27rem;
+                left: 21rem;
+                height: 5rem;
+                width: 5rem;
+
+            }
+
+            &__html {
+
+                left: 44rem;
+                top: -12rem;
+                height: 5rem;
+                width: 5rem;
+
+            }
+
+            &__javascript {
+
+                top: -12rem;
+                left: 24rem;
+                height: 5rem;
+                width: 5rem;
+
+            }
+
+            &__vscode {
+                
+                top: -21rem;
+                left: 7rem;
+                height: 5rem;
+                width: 5rem;
+
+            }
+
+            &__rotate {
+
+                top: -18rem;
+                left: 25rem;
+
+            }
+
+            &__opacity {
+
+                top: -12rem;
+                left: 14rem;
+
+            }
+
+            &__position {
+
+                top: -3rem;
+                left: 28rem; 
+
             }
 
         }
@@ -373,7 +492,7 @@
 
             &__valentin {
     
-                left: -15rem;
+                left: -8rem;
         
             }
 
@@ -385,13 +504,13 @@
 
             &__css {
 
-                left: 36rem;
+                left: 34rem;
     
             }
     
             &__vuejs {
 
-                left: 16rem;
+                left: 14rem;
     
             }
 
@@ -427,7 +546,7 @@
             
             &__position {
 
-                left: 26rem;
+                left: 24rem;
 
             }
             
@@ -492,6 +611,7 @@
         }
 
     }
+
 }
 
 @media (max-width: 435px) {
@@ -504,8 +624,6 @@
 
             &__css {
 
-                height: 5rem;
-                width: 5rem;
                 top: -20rem;
                 left: 30rem;
 
@@ -513,8 +631,6 @@
 
             &__vuejs {
 
-                height: 5rem;
-                width: 5rem;
                 top: -20rem;
                 left: 8rem;
 
@@ -522,17 +638,13 @@
 
             &__html {
 
-                height: 5rem;
-                width: 5rem;
                 top: -3rem;
                 left: 30rem;
 
             }
 
             &__javascript {
-
-                height: 5rem;
-                width: 5rem;
+                
                 top: -5rem;
                 left: 10rem;
 
@@ -540,26 +652,30 @@
 
             &__vscode {
 
-                height: 5rem;
-                width: 5rem;
                 top: -15rem;
                 left: -8rem;
 
             }
 
             &__rotate {
+
                 top: -10rem;
                 left: 10rem;
+
             }
 
             &__opacity {
+
                 top: -6rem;
                 left: -2rem;
+
             }
 
             &__position {
+
                 top: 4rem;
-                left: 14rem;         
+                left: 14rem; 
+
             }
 
             &__rotate, &__opacity , &__position {
@@ -598,19 +714,17 @@
         .animation { 
     
             &__valentin {
-    
-                width: 27.48rem;
-                left: -14rem;
+
+                width: 20.32rem;
+                left: -7rem;
                 bottom: -10rem;
         
             }
     
             &__pokeball {
 
-                height: 7.8rem;
-                width: 7.44rem; 
-                left: 7rem;
-                bottom: -13rem;
+                left: 7.3rem;
+                bottom: -13.2rem;
         
             }
 
@@ -638,4 +752,5 @@
         }
 
     }
+    
 }
