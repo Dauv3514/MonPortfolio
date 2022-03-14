@@ -485,18 +485,20 @@ h1, h2 {
 .accueil .animation__valentinpc {
   position: relative;
   left: 4rem;
+  height: 40.6rem;
+  width: 30rem;
 }
 .accueil .animation__valentinpc:after {
   content: "";
   position: absolute;
-  /* left: 3rem;
-  top: 2rem; */
+  top: 4rem;
+  left: 7rem;
   z-index: 8;
   background: url("../img/valentinpc.svg") no-repeat;
   background-size: 100%;
   display: inline-block;
-  height: 44rem;
-  width: 45.3rem;
+  height: 40.6rem;
+  width: 30rem;
 }
 .accueil .animation__description {
   font-family: var(--font-family-kreon);
@@ -719,6 +721,7 @@ h1, h2 {
     display: flex;
     justify-content: center;
     width: 100%;
+    text-align: center;
   }
   .accueil .presentation__contact {
     display: none;
@@ -750,13 +753,14 @@ h1, h2 {
   }
   .accueil .animation__valentinpc {
     position: absolute;
-    left: 4rem;
+    left: 3rem;
+    top: 2rem;
     height: 100%;
     width: 100%;
   }
   .accueil .animation__valentinpc:after {
-    height: 80%;
-    width: 80%;
+    height: 70%;
+    width: 50%;
   }
   .accueil .animation__description {
     position: absolute;
@@ -873,6 +877,9 @@ h1, h2 {
     width: 40rem;
     height: 38.4rem;
   }
+  .accueil .animation__valentinpc {
+    left: 2rem;
+  }
   .accueil .animation__css {
     left: 43rem;
     top: -25rem;
@@ -967,6 +974,10 @@ h1, h2 {
     width: 32.7rem;
     height: 31.4rem;
   }
+  .accueil .animation__valentinpc {
+    left: 1rem;
+    top: 0rem;
+  }
   .accueil .animation__lettre, .accueil .animation__lettre2 {
     font-size: 2rem;
   }
@@ -1040,6 +1051,9 @@ h1, h2 {
     top: 22rem;
     width: 27.6rem;
     height: 26.5rem;
+  }
+  .accueil .animation__valentinpc {
+    left: -0.4rem;
   }
   .accueil .animation__description {
     position: absolute;
@@ -1892,6 +1906,9 @@ footer {
   height: 3.6rem;
   width: 3.6rem;
 }
+.footer__cv {
+  font-size: 2.6rem;
+}
 .footer__copyright {
   text-align: center;
   padding-bottom: 8rem;
@@ -1925,6 +1942,9 @@ footer {
     height: 2.8rem;
     width: 2.8rem;
   }
+  .footer__cv {
+    font-size: var(--font-size-moyen);
+  }
   .footer__copyright {
     font-size: 1.5rem;
   }
@@ -1957,6 +1977,9 @@ footer {
   .footer__linkedin {
     height: 2.1rem;
     width: 2.1rem;
+  }
+  .footer__cv {
+    font-size: 2rem;
   }
   .footer__copyright {
     font-size: 1rem;

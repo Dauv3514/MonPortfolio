@@ -248,20 +248,22 @@
 
             position: relative;
             left: 4rem;
+            height: 40.6rem;
+            width: 30rem;
 
 
             &:after {
 
                 content: ""; 
                 position: absolute;
-                /* left: 3rem;
-                top: 2rem; */
+                top: 4rem;
+                left: 7rem;
                 z-index: 8;
                 background: url('../img/valentinpc.svg') no-repeat;
                 background-size: 100%;
                 display: inline-block;
-                height: 44rem;
-                width: 45.3rem;
+                height: 40.6rem;
+                width: 30rem;
     
             } 
 

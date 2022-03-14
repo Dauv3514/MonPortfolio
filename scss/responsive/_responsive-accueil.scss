@@ -111,6 +111,7 @@
                 padding-top: 2rem;
                 @include flex-justify;
                 width: 100%;
+                text-align: center;
 
             }
 
@@ -163,14 +164,15 @@
             &__valentinpc {
 
                 position: absolute;
-                left: 4rem;
+                left: 3rem;
+                top: 2rem;
                 height: 100%;
                 width: 100%; 
 
                 &:after {
 
-                    height: 80%;
-                    width: 80%; 
+                    height: 70%;
+                    width: 50%; 
 
                 }
 
@@ -412,6 +414,12 @@
         
             }
 
+            &__valentinpc {
+
+                left: 2rem;
+
+            }
+
             &__css {
 
                 left: 43rem;
@@ -595,6 +603,13 @@
         
             }
 
+            &__valentinpc {
+
+                left: 1rem;
+                top: 0rem;
+
+            }
+
             &__lettre, &__lettre2 {
 
                 font-size: 2rem;
@@ -734,6 +749,12 @@
                 top: 22rem;
                 width: 27.6rem; height: 26.5rem;
         
+            }
+
+            &__valentinpc {
+
+                left: -0.4rem;
+
             }
 
             &__description {
