@@ -183,7 +183,7 @@
                     <span> Node JS </span>
                 </div>
             </article>
-              
+            
             <article>
                 <p class="projets__titre"> Speache </p>
                 <div class="projets__bloc-image">
@@ -370,7 +370,7 @@
         <!-- <img class="contact__eclat-gauche" alt="eclat vert" src="./img/eclatsvert2.svg"> -->
         <div class="contact__animation">
             <div class="contact__texte">
-                <img alt="texte entourage rond" src="./img/texte-rond.svg">
+                <img alt="texte entourage rond" src="./img/circulaire2.svg">
             </div> 
             <a href="mailto:valentindauvier@hotmail.fr" target="_blank" class="contact__rond" id="rondcontact">
                 <div class="contact__images">
@@ -401,15 +401,15 @@
 
         ScrollReveal({
 
-            reset: true,
             distance: '6rem',
             duration: 2500,
+            delay: 200,
 
         });
 
-		ScrollReveal().reveal('#presentation', { delay: 200, origin: 'left'});
-		ScrollReveal().reveal('.projets__bloc', { delay: 200});
-        ScrollReveal().reveal('.apropos__bloc', { delay: 200, origin: 'right'});
+		ScrollReveal().reveal('.presentation', { origin: 'left'});
+		ScrollReveal().reveal('.projets__bloc');
+        ScrollReveal().reveal('.apropos__bloc', { origin: 'right'}); 
 
 	</script>
 

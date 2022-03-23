@@ -127,6 +127,9 @@
 
             position: absolute;
             top: 24rem;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            width: 100%;
 
             &__valentin {
 
@@ -140,6 +143,8 @@
 
                 position: absolute;
                 top: 36.7rem;
+                left: 30rem;
+                height: 0px;
 
             }
 
@@ -242,6 +247,24 @@
 
 }
 
+@media (max-width: 1200px) {
+
+    .accueil {
+
+        .animation { 
+
+            &__pokemon {
+
+                left: 20rem;
+
+            }
+
+        }
+
+    }
+
+}
+
 @media (max-width: 950px) {
 
     .accueil {
@@ -271,7 +294,6 @@
         }
 
         .animation {
-
     
             &__valentin {
     
@@ -594,6 +616,13 @@
         }
 
         .animation { 
+        
+            &__pokemon {
+        
+                left: 14rem;
+        
+            }
+        
 
             &__blob {
 
@@ -774,4 +803,22 @@
 
     }
     
+}
+
+@media (max-width: 380px) {
+
+    .accueil {
+
+        .animation { 
+
+            &__pokemon {
+
+                left: 10rem;
+
+            }
+
+        }
+
+    }
+
 }

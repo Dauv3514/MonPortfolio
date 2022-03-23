@@ -15,7 +15,7 @@
     .presentation {
 
         padding-left: 20rem;
-
+        
         &__nom {
 
             padding-bottom: 5rem;
@@ -76,19 +76,21 @@
 
     .animation {
         
-
         &__pokemon {
 
             position: absolute;
             bottom: 0rem;
+            display: none;      
         
         }
 
         &__eclat {
+
             position: relative; // a revoir positionnement eclat qui mange sur la navbar
             top: 35rem;
             left: 9rem; 
             display: none;
+
         }
 
         &__valentin {
@@ -105,6 +107,7 @@
             position: absolute;
             bottom: 35.4rem;
             left: 35.5rem;
+            
 
         }
 
@@ -241,6 +244,8 @@
             visibility: hidden;
             display: flex;
             justify-content: center;
+            height: 1000px;
+            max-width: 100%;
 
         }
 

@@ -1,19 +1,26 @@
 // Animation pokemon
 
+function apparaitreAnimation1() {
+  document.getElementById('animation-pokemon').style.display='block';
+}
+  window.setTimeout(apparaitreAnimation1, 100);
+
 function cacher() {
   document.getElementById('animation-pokemon').style.display='none';
 }
-  window.setTimeout(cacher, 12000);
+  window.setTimeout(cacher, 12000); 
 
 
-function apparaitre() { 
+function apparaitreAnimation2() { 
 
   document.getElementById('animation2').style.visibility='visible';
-  /* document.getElementById('eclat').style.visibility='visible'; */
 
-}
+} 
 
-window.setTimeout(apparaitre, 12040);
+/* document.getElementById('eclat').style.visibility='visible'; */
+
+
+window.setTimeout(apparaitreAnimation2, 12040);
 
 // Animation Toggle Compétences
 

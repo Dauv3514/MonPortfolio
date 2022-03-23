@@ -103,6 +103,7 @@ html {
   background-color: var(--couleur-bleu-fonce);
   color: var(--color-blanc);
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -364,6 +365,7 @@ h1, h2 {
 .accueil .animation__pokemon {
   position: absolute;
   bottom: 0rem;
+  display: none;
 }
 .accueil .animation__eclat {
   position: relative;
@@ -481,6 +483,8 @@ h1, h2 {
   visibility: hidden;
   display: flex;
   justify-content: center;
+  height: 1000px;
+  max-width: 100%;
 }
 .accueil .animation__valentinpc {
   position: relative;
@@ -729,6 +733,9 @@ h1, h2 {
   .accueil .animation {
     position: absolute;
     top: 24rem;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100%;
   }
   .accueil .animation__valentin {
     width: 34.64rem;
@@ -738,6 +745,8 @@ h1, h2 {
   .accueil .animation__pokemon {
     position: absolute;
     top: 36.7rem;
+    left: 30rem;
+    height: 0px;
   }
   .accueil .animation__pokeball {
     left: 36rem;
@@ -792,6 +801,11 @@ h1, h2 {
   }
   .accueil .animation__position {
     top: -10rem;
+  }
+}
+@media (max-width: 1200px) {
+  .accueil .animation__pokemon {
+    left: 20rem;
   }
 }
 @media (max-width: 950px) {
@@ -968,6 +982,9 @@ h1, h2 {
     padding-left: 6rem;
     padding-top: 4rem;
   }
+  .accueil .animation__pokemon {
+    left: 14rem;
+  }
   .accueil .animation__blob {
     position: absolute;
     top: 20rem;
@@ -1061,6 +1078,11 @@ h1, h2 {
   }
   .accueil .animation__lettre, .accueil .animation__lettre2 {
     font-size: 1.7rem;
+  }
+}
+@media (max-width: 380px) {
+  .accueil .animation__pokemon {
+    left: 10rem;
   }
 }
 .projets {
@@ -1216,7 +1238,7 @@ h1, h2 {
 }
 @media (max-width: 420px) {
   .projets__bloc > article {
-    width: 60%;
+    width: 70%;
   }
   .projets__titre {
     font-size: var(--font-size-petit);
@@ -1715,6 +1737,7 @@ h1, h2 {
   -ms-animation-timing-function: linear;
   -o-animation-timing-function: linear;
   animation-timing-function: linear;
+  background-color: var(--couleur-bleu-fonce);
 }
 @-webkit-keyframes rotate {
   from {
