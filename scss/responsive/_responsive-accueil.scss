@@ -63,7 +63,7 @@
         padding-bottom: 0rem;
         padding-left: 1rem;
         padding-right: 1rem;
-        height: 100vh; 
+        height: 840px; 
 
         .presentation { 
 
@@ -105,7 +105,6 @@
             &__description {
 
                 margin-bottom: 2rem;
-                position: absolute;
                 padding-right: 16rem;
                 padding-left: 16rem;
                 padding-top: 2rem;
@@ -130,6 +129,7 @@
             overflow-x: hidden;
             overflow-y: hidden;
             width: 100%;
+            height: 100%;
 
             &__valentin {
 
@@ -155,6 +155,12 @@
                 height: 10.4rem;
                 width: 9.92rem; 
     
+            }
+
+            &__secondaire {
+
+                height: 48vh;
+
             }
 
             &__blob {
@@ -396,6 +402,12 @@
             &__specialite {
     
                 padding-left: 0rem;
+
+                .point {
+                    
+                    font-size: 4.5rem;
+
+                }
         
             } 
     
@@ -405,6 +417,7 @@
                 padding-top: 2rem;
                 padding-right: 8rem;
                 padding-left: 8rem;
+                line-height: 2.5rem;
     
             }
 
@@ -431,7 +444,7 @@
             &__blob {
 
                 position: absolute;
-                top: 17rem;
+                top: 15rem;
                 width: 40rem; height: 38.4rem;
         
             }
@@ -627,7 +640,7 @@
             &__blob {
 
                 position: absolute;
-                top: 20rem;
+                top: 16rem;
                 width: 32.7rem; height: 31.4rem;
         
             }
@@ -648,7 +661,7 @@
             &__description {
 
                 position: absolute;
-                top: 58rem;
+                top: 54rem;
 
             }
 
@@ -786,10 +799,15 @@
 
             }
 
-            &__description {
+            &__blob {
+
+                top: 16rem;
     
-                position: absolute;
-                top: 55rem;
+            }
+
+            &__description {
+
+                top: 48rem;
     
             }
 

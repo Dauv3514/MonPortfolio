@@ -62,15 +62,4 @@ function close() {
 
 }
 
-// Hover sur mobile
-
-let overlay = document.getElementsByClassName('bouton');
-
-overlay.addEventListener("touchstart", function() {
-  overlay.classList.add("hovermobile");
-})
-
-overlay.addEventListener("touchend", function() {
-  overlay.classList.remove("hovermobile");
-})
 

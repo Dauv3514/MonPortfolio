@@ -483,7 +483,7 @@ h1, h2 {
   visibility: hidden;
   display: flex;
   justify-content: center;
-  height: 1000px;
+  height: 650px;
   max-width: 100%;
 }
 .accueil .animation__valentinpc {
@@ -690,7 +690,7 @@ h1, h2 {
     padding-bottom: 0rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    height: 100vh;
+    height: 840px;
   }
   .accueil .presentation {
     width: 100%;
@@ -718,7 +718,6 @@ h1, h2 {
   }
   .accueil .presentation__description {
     margin-bottom: 2rem;
-    position: absolute;
     padding-right: 16rem;
     padding-left: 16rem;
     padding-top: 2rem;
@@ -736,6 +735,7 @@ h1, h2 {
     overflow-x: hidden;
     overflow-y: hidden;
     width: 100%;
+    height: 100%;
   }
   .accueil .animation__valentin {
     width: 34.64rem;
@@ -753,6 +753,9 @@ h1, h2 {
     bottom: -0.5rem;
     height: 10.4rem;
     width: 9.92rem;
+  }
+  .accueil .animation__secondaire {
+    height: 48vh;
   }
   .accueil .animation__blob {
     width: 45rem;
@@ -869,11 +872,15 @@ h1, h2 {
   .accueil .presentation__specialite {
     padding-left: 0rem;
   }
+  .accueil .presentation__specialite .point {
+    font-size: 4.5rem;
+  }
   .accueil .presentation__description {
     font-size: 1.3rem;
     padding-top: 2rem;
     padding-right: 8rem;
     padding-left: 8rem;
+    line-height: 2.5rem;
   }
   .accueil .animation__valentin {
     width: 27.48rem;
@@ -887,7 +894,7 @@ h1, h2 {
   }
   .accueil .animation__blob {
     position: absolute;
-    top: 17rem;
+    top: 15rem;
     width: 40rem;
     height: 38.4rem;
   }
@@ -987,7 +994,7 @@ h1, h2 {
   }
   .accueil .animation__blob {
     position: absolute;
-    top: 20rem;
+    top: 16rem;
     width: 32.7rem;
     height: 31.4rem;
   }
@@ -1000,7 +1007,7 @@ h1, h2 {
   }
   .accueil .animation__description {
     position: absolute;
-    top: 58rem;
+    top: 54rem;
   }
 }
 @media (max-width: 435px) {
@@ -1072,9 +1079,11 @@ h1, h2 {
   .accueil .animation__valentinpc {
     left: -0.4rem;
   }
+  .accueil .animation__blob {
+    top: 16rem;
+  }
   .accueil .animation__description {
-    position: absolute;
-    top: 55rem;
+    top: 48rem;
   }
   .accueil .animation__lettre, .accueil .animation__lettre2 {
     font-size: 1.7rem;
