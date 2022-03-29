@@ -105,9 +105,10 @@
         &__pokeball {
 
             position: absolute;
+            height: 14rem;
+            width: 13.35rem; 
             bottom: 35.4rem;
             left: 35.5rem;
-            
 
         }
 
@@ -264,7 +265,7 @@
                 top: 4rem;
                 left: 7rem;
                 z-index: 8;
-                background: url('../img/valentinpc.svg') no-repeat;
+                background: url('../img/valentinpc.png') no-repeat;
                 background-size: 100%;
                 display: inline-block;
                 height: 40.6rem;
