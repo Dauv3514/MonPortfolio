@@ -485,7 +485,7 @@ h1, h2 {
   visibility: hidden;
   display: flex;
   justify-content: center;
-  height: 650px;
+  height: 65rem;
   max-width: 100%;
 }
 .accueil .animation__valentinpc {
@@ -1169,7 +1169,7 @@ h1, h2 {
   cursor: pointer;
 }
 .projets__technos {
-  padding-left: 4rem;
+  text-align: center;
   padding-top: 3rem;
 }
 @media (max-width: 1750px) {
@@ -1234,9 +1234,6 @@ h1, h2 {
   }
   .projets__description {
     font-size: 1.4rem;
-  }
-  .projets__technos {
-    padding-left: 3rem;
   }
   .projets__technos span {
     font-size: 1.4rem;
